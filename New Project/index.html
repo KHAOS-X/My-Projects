@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./asset/F__1_-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>FUTA FIRARS Clone</title>
+  </head>
+  <body>
+    <!-- Javascript -->
+    <script>
+        function changebgimg(){
+            const images = [
+            'url("./asset/bg1 (1).jpg")',
+            'url("./asset/bg1 (2).jpg")',
+            'url("./asset/bg1 (3).jpg")',
+            'url("./asset/bg1 (4).jpg")',
+            'url("./asset/bg1 (5).jpg")'
+        ]
+
+        const body = document.querySelector('body')
+        const bgimg = images[Math.floor(Math.random() * images.length)];
+        body.style.backgroundImage = bgimg;
+        }
+        setInterval(changebgimg, 10000)
+    </script>
+    <!-- Javascript -->
+    
+    <div class="parent_container">
+      <header class="header">
+        <div class="logo_container">
+          <img
+            src="./asset/F__1_-removebg-preview.png"
+            alt="logo"
+            class="logo"
+          />
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </header>
+      <div class="parent_container">
+        <div class="mother_container_home">
+          <h3 class="h3">2019/2020 STUDENT REGISTRATION PROCEDURE</h3>
+          <div class="btn_header">
+            <button class="return">Return</button
+            ><button
+              class="proceed"
+              onclick="window.location.href ='login.html';"
+            >
+              Proceed
+            </button>
+          </div>
+          <div class="content_container">
+            <p>FOR FRESH AND RETURNING STUDENTS</p>
+            <h3 class="mini_header">Step 1 [How to login?]</h3>
+            <ul>
+              <li>
+                Login with your
+                <b>JAMB Registration Number [Fresh Students only]</b> OR
+                <b>Matric Number [Returning Students]</b> as your Username and
+                your Surname(In Uppercase) as Password.
+              </li>
+              <li>
+                In the case of changing your password, you will be required to
+                provide your <b>Email and Phone Number</b> before proceeding.
+              </li>
+              <li>
+                In the case you where you have forgotten your password, click on
+                the forgot password link on the bottom right of the login panel,
+                you will be redirected to a different page where you will be
+                asked to provide your Username, Registered Email address and New
+                Password, click on the Reset Password button and you will see a
+                pop up message that says "you are successful".
+              </li>
+            </ul>
+            <h3 class="mini_header">Step 2 [Student Biodata]</h3>
+            <p>
+              <b
+                >Returning Student are to skip this part of this section as they
+                have already completed this step before, proceed to Step 3.</b
+              >
+            </p>
+            <ul>
+              <li>
+                Click on Student Biodata
+                <p><b>For Fresh Students only</b></p>
+                <ul>
+                  <li class="square">
+                    You are advised to fill in the the neccessary information in
+                    each section accordingly as it is compulsory. Under the
+                    Upload section, you will be required to upload the scanned
+                    copy of the following documents:
+                  </li>
+                  <ul>
+                    <li class="asterisk">
+                      Passport Photograph (Not more than a month old),
+                    </li>
+                    <li class="asterisk">Birth Certificate,</li>
+                    <li class="asterisk">
+                      Certificate of Local Government of Origin,
+                    </li>
+                    <li class="asterisk">Court Affidavit,</li>
+                    <li class="asterisk">Attestation Letter,</li>
+                    <li class="asterisk">JAMB Admission Letter,</li>
+                    <li class="asterisk">O'Level Result(s),</li>
+                    <li class="asterisk">
+                      NCE/HD/HND (For Direct Entry Students).
+                    </li>
+                  </ul>
+                  <li class="square">
+                    Click on "Finalize and Preview Biodata Registration" Under
+                    the Finalize section.
+                  </li>
+                  <li class="square">
+                    After clicking on "Finalize", your O'Level result(s) that
+                    you have supplied will be screened and if you passed, you
+                    will be asked to generate the invoice and go to any of the
+                    bank listed on your invoice to pay your school fee
+                    <b>REMITA Platform only</b>, otherwise contact the Live Chat
+                    below for assistance.
+                  </li>
+                  <li class="square">
+                    <b
+                      >Note: You will not be able to generate the school invoice
+                      to make payment if you fail to properly fill in the
+                      sections or pass the online screening.
+                    </b>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h3 class="mini_header">Step 3 [Payment]</h3>
+            <ul>
+              <li>Click on Payment.</li>
+              <li>
+                Your payment due will be available as Debit under Student
+                Ledger.
+              </li>
+              <li>
+                To make any payment, you have to select the payment, generate
+                the invoice from which your <b>RRR Number and Order ID</b> will
+                be made available.
+              </li>
+              <li>
+                Present the <b>RRR Number</b> on the invoice at any of the banks
+                listed on the invoice and make your payment on
+                <b>REMITA PLATFORM only.</b>
+              </li>
+              <li>
+                You have to confirm your payment under the "Confirm Payment
+                Section" and print your Official receipt.
+              </li>
+            </ul>
+            <h3 class="mini_header">Step 4 [Accommodation (OPTIONAL)]</h3>
+            <ul>
+              <li>Click on Accommodation.</li>
+              <li>
+                To be eligible for accommodation for accommodation application,
+                you must have paid and confirmed your <b>SCHOOL FEES.</b>
+              </li>
+              <li>Read the Hall Regulations and tick/check "I agree..."</li>
+              <li>
+                Select the hall of your choice and click "APPLY NOW" and await
+                an SMS of offer for Accommodation if accepted.
+              </li>
+              <li>
+                <b
+                  >Note: For Student whose Phone Number are on DND , the SENDER
+                  ID for the offer of Accommodation will come as
+                  <b>rUpdate</b> and for those not on DND, it will come as
+                  <b>FUTA ACMDATN</b>
+                </b>
+              </li>
+              <li>
+                Follow the rest of the instruction afterwards to complete the
+                Accommodation process.
+              </li>
+            </ul>
+            <h3 class="mini_header">Step 5 [Course Registration]</h3>
+            <ul>
+              <li class="square">Click on Course Registration</li>
+              <li class="square">
+                To be eligible for course registration, you must have paid and
+                confirmed your SCHOOL FEE
+              </li>
+              <li class="square">
+                Your courses will be displayed for you to select appropriately,
+                submit, print the pending course form and present to your Level
+                Registration for approval
+                <b>(In the case of Fresh students)</b>. For Returning students,
+                you are to submit, print the pending course form and present to
+                your Level Registration Officer for approval.
+              </li>
+              <li class="square">
+                After approval, you are to print the approved course form,
+                present them for endorsement and signing and then submit to your
+                department.
+              </li>
+            </ul>
+            <p class="disclaimer">
+              Any further enquiries or complaints shoud be reported to our Live
+              Chat system below or send an Email to ___________ for assistance.
+            </p>
+            <div class="btn_header">
+              <button class="return">Return</button
+              ><button
+                class="proceed"
+                onclick="window.location.href ='login.html';"
+              >
+                Proceed
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+         
+    </div>
+  </body>
+</html>
