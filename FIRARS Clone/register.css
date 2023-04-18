@@ -35,21 +35,49 @@ button{
 }
 
 .parent_container{
-    margin: 30px 30px;
+    margin: 10px 10px;
     /* border: 2px solid #A020F0; */
     padding: 20px 20px;
+    text-align: center;
 }
-
+header{
+    text-align: left;
+    margin: 0px;
+}
+ul{
+    display: flex;
+    justify-content:flex-start ;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    border-left: 2px solid white;
+    padding: 10px;
+}
+a:hover{
+    background-color: blue;
+}
+a:focus{
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+}
+li{
+    list-style: none;
+}
 .form_container{
     background-color:#A020F0;
     border: 1px solid blue;
-    padding: 10px 10px;
+    padding: 0px 10px;
     margin: 10px auto;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 h2{
     font-weight: 400;
+    width: 90%;
+    border-bottom: 1px solid grey;
 }
 form{
     border: 1px solid blue;
@@ -57,7 +85,8 @@ form{
     margin: auto;
     border-radius: 25px;
     padding: 30px 50px;
-   
+    text-align: left;
+    
 }
 
 label{
@@ -74,7 +103,7 @@ input,select{
     margin-bottom: 50px;
 }
 input{
-    width: 250px;
+    width: 290px;
     border-radius: 15px;
     margin-right: 100px;
 }
@@ -90,4 +119,5 @@ input{
 select{
     width: 150px;
     margin-right: 150px;
+    
 }

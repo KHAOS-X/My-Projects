@@ -6,86 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="register.css" />
     <title>Student Registration</title>
-    <script>
-      var lookup ={};
-       
-        lookup['saat'] = [
-          "Agricultural Extension and Communication Technology",
-          "Agricultural and Resource Economics",
-          "Animal Production and Health",
-          "Crop Soil and Pest Management",
-          "Fishery and Aquaculture Technology",
-          "Ecotourism and Wildlife Management",
-          "Forestry and Wood Technology",
-          "Food Science and Technology",
-        ];
-        lookup['sbms'] = ["To be Added"];
-        lookup['sbcs'] = ["To be Added"];
-        lookup['scs']= ["To be Added"];
-        lookup['seet']= [
-          "Agricultural Engineering",
-          "Civil Engineering",
-          "Electrical and Electronics Engineering",
-          "Mechanical Engineering",
-          "Metallurgical and Materials Engineering",
-          "Mining Engineering",
-        ];
-        lookup['sems']= [
-          "Applied Geophysics",
-          "Applied Geology",
-          "Meteorology",
-          "Marine Science and Technology",
-          "Remote Sensing and Geoscience Information Systems",
-        ];
-        lookup['set']= [
-          "Architecture",
-          "Building Technology",
-          "Estate Management",
-          "Industrial Design",
-          "Quantity Surveying",
-          "Urban and Regional Planning",
-          "Surveying and Geoinformatics",
-        ];
-        lookup['slit']=[
-          "Project Management Technology",
-          "Transport Management Technology",
-          "Library Management Technology",
-          "Entrepeneurship Management Technology",
-        ];
-        lookup['sls']= ["Biochemistry", "Biology", "Biotechnology", "Microbiology"];
-        lookup['soc']= [
-          "Computer Science",
-          "Cybersecurity",
-          "Information and Communication Technology",
-          "Information Systems",
-          "Software Engineering",
-        ];
-        lookup['sps']= [
-          "Chemistry",
-          "Mathematical Sciences",
-          "Physics",
-          "Statistics",
-          "General Studies",
-        ];
-      
-
-      function chooseDepartment() {
-        var schoolList = document.getElementById("school");
-        var departmentList = document.getElementById("department");
-        var selSchool = schoolList.options[schoolList.selectedIndex].value;
-        while (departmentList.options.length) {
-            departmentList.remove(0);
-        }
-        var schools = lookup[selSchool];
-        if (schools){
-            var i;
-            for (i = 0; i < schools.length; i++){
-                var school = new Option(schools[i], i);
-                departmentList.options.add(school);
-            }
-        }
-    }
-    </script>
+    <script src="register.js"></script>
   </head>
   <body>
     <div class="parent_container">
@@ -94,7 +15,18 @@
       </div>
 
       <h1>Student Registration</h1>
+      
       <div class="form_container">
+        <header>
+            <ul>
+                <a href=""><li>Biodata</li></a>
+                <a href=""><li>Travelling Passport (Optional)</li></a>
+                <a href=""><li>Counselling</li></a>
+                <a href=""><li>Academics</li></a>
+                <a href=""><li>Uploads</li></a>
+                <a href=""><li>Finalize</li></a> 
+            </ul>
+          </header>
         <form action="post" name="info">
           <h2>Bio-Data</h2>
           <br />
@@ -136,6 +68,7 @@
           </select>
           <label for="marital">Marital Status</label>
           <select name="marital" id="marital">
+            <option value="" disabled selected></option>
             <option value="single">Single</option>
             <option value="married">Married</option>
             <option value="divorced">Divorced</option>
@@ -144,17 +77,20 @@
           ><br />
           <label for="religion">Religion</label>
           <select name="religion" id="religion">
+            <option value="" disabled selected></option>
             <option value="christianity">Christianity</option>
             <option value="islam">Islam</option>
             <option value="others">Others</option>
           </select>
           <label for="nationality">Nationality</label>
           <select name="nationality" id="nationality">
+            <option value="" disabled selected></option>
             <option value="nigerian">Nigerian</option>
             <option value="others">Others</option></select
           ><br />
           <label for="s_o_o">State of Origin</label>
           <select name="s_o_o" id="s_o_o">
+            <option value="" disabled selected></option>
             <option value="abia">Abia</option>
             <option value="adamawa">Adamawa</option>
             <option value="akwa_ibom">Akwa Ibom</option>
@@ -243,18 +179,61 @@
           <select name="department" id="department" class="department">
             <option value="" disabled selected>
               Choose Your Department
-            </option></select
-          ><br />
-          <label for="h_address">Home Address</label>
-          <input type="text" name="" id="" />
-          <label for="h_address">Home Address</label>
-          <input type="text" name="" id="" />
-          <label for="h_address">Home Address</label>
-          <input type="text" name="" id="" />
-          <label for="h_address">Home Address</label>
-          <input type="text" name="" id="" />
+            </option>
+          </select><br />
+          <h2>Previous Educational History</h2>
+          <br>
+          <label for="previous_history">Have You Matriculated Before?</label>
+          <select name="previous_history" id="previous_history">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select><br>
+          <label for="if_yes">If Yes, where?</label>
+          <input type="text" name="if_yes" id="if_yes" /><br>
+          <label for="matric_no">Matriculation Number</label>
+          <input type="text" name="matric_no" id="matric_no" /><br>
+          <label for="reason">Reason For Leaving</label>
+          <input type="text" name="reason" id="reason" class="address" />
+          <h2>Next of Kin Information</h2>
+          <br>
+          <label for="next_of_kin">Next of Kin</label>
+          <input type="text" name="next_of_kin" id="next_of_kin">
+          <label for="n_o_k_address">Address</label>
+          <input type="text" name="n_o_k_address" id="n_o_k_address"><br>
+          <label for="n_o_k_p_number">Phone Number</label>
+          <input type="number" name="n_o_k_p_number" id="n_o_k_p_number">
+          <label for="n_o_k_relationship">Relationship</label>
+          <input type="text" name="n_o_k_relationship" id="n_o_k_relationship">
+          <h2>Parent/Guardian Information</h2>
+          <br>
+          <label for="father_name">Father's Name</label>
+          <input type="text" name="father_name" id="father_name">
+          <label for="father_address">Address</label>
+          <input type="text" name="father_address id="father_address">
+          <label for="father_number">Phone Number</label>
+          <input type="text" name="father_number" id="father_number">
+          <label for="father_occupation">Occupation</label>
+          <input type="text" name="father_occupation" id="father_occupation">
+          <label for="mother_name">Mother's Name</label>
+          <input type="text" name="mother_name" id="mother_name">
+          <label for="mother_address">Address</label>
+          <input type="text" name="mother_address" id="mother_address">
+          <label for="mother_number">Phone Number</label>
+          <input type="text" name="mother_number" id="mother_number">
+          <label for="mother_occupation">Occupation</label>
+          <input type="text" name="mother_occupation" id="mother_occupation">
+          <label for="guardian_name">Guardian's Name</label>
+          <input type="text" name="guardian_name" id="mother_name">
+          <label for="guardian_address">Address</label>
+          <input type="text" name="guardian_address" id="guardian_address">
+          <label for="guardian_number">Phone Number</label>
+          <input type="text" name="guardian_number" id="guardian_number">
+          <label for="mother_occupation">Occupation</label>
+          <input type="text" name="guardian_occupation" id="guardian_occupation">
         </form>
+        <a href=""><button class="">Next</button></a>
       </div>
+
     </div>
   </body>
 </html>
