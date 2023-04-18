@@ -1,18 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <div>
-            <form action="post">
-                
-            </form>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <title>Student Registration</title>
+    <script>
+      var lookup ={};
+       
+        lookup['saat'] = [
+          "Agricultural Extension and Communication Technology",
+          "Agricultural and Resource Economics",
+          "Animal Production and Health",
+          "Crop Soil and Pest Management",
+          "Fishery and Aquaculture Technology",
+          "Ecotourism and Wildlife Management",
+          "Forestry and Wood Technology",
+          "Food Science and Technology",
+        ];
+        lookup['sbms'] = ["To be Added"];
+        lookup['sbcs'] = ["To be Added"];
+        lookup['scs']= ["To be Added"];
+        lookup['seet']= [
+          "Agricultural Engineering",
+          "Civil Engineering",
+          "Electrical and Electronics Engineering",
+          "Mechanical Engineering",
+          "Metallurgical and Materials Engineering",
+          "Mining Engineering",
+        ];
+        lookup['sems']= [
+          "Applied Geophysics",
+          "Applied Geology",
+          "Meteorology",
+          "Marine Science and Technology",
+          "Remote Sensing and Geoscience Information Systems",
+        ];
+        lookup['set']= [
+          "Architecture",
+          "Building Technology",
+          "Estate Management",
+          "Industrial Design",
+          "Quantity Surveying",
+          "Urban and Regional Planning",
+          "Surveying and Geoinformatics",
+        ];
+        lookup['slit']=[
+          "Project Management Technology",
+          "Transport Management Technology",
+          "Library Management Technology",
+          "Entrepeneurship Management Technology",
+        ];
+        lookup['sls']= ["Biochemistry", "Biology", "Biotechnology", "Microbiology"];
+        lookup['soc']= [
+          "Computer Science",
+          "Cybersecurity",
+          "Information and Communication Technology",
+          "Information Systems",
+          "Software Engineering",
+        ];
+        lookup['sps']= [
+          "Chemistry",
+          "Mathematical Sciences",
+          "Physics",
+          "Statistics",
+          "General Studies",
+        ];
+      
+
+      function chooseDepartment() {
+        var schoolList = document.getElementById("school");
+        var departmentList = document.getElementById("department");
+        var selSchool = schoolList.options[schoolList.selectedIndex].value;
+        while (departmentList.options.length) {
+            departmentList.remove(0);
+        }
+        var schools = lookup[selSchool];
+        if (schools){
+            var i;
+            for (i = 0; i < schools.length; i++){
+                var school = new Option(schools[i], i);
+                departmentList.options.add(school);
+            }
+        }
+    }
+    </script>
+  </head>
+  <body>
+    <div class="parent_container">
+      <div class="logo_container">
+        <img src="./asset/F__1_-removebg-preview.png" alt="logo" class="logo" />
+      </div>
+
+      <h1>Student Registration</h1>
+      <div class="form_container">
+        <form action="post" name="info">
+          <h2>Bio-Data</h2>
+          <br />
+          <label for="title">Title</label>
+          <select name="title" id="title">
+            <option value="mr">Mr</option>
+            <option value="mrs">Mrs</option>
+            <option value="miss">Miss</option>
+          </select>
+
+          <label for="f_name">First Name</label>
+          <input type="text" name="f_name" id="f_name" /><br />
+
+          <label for="l_name">Last Name</label>
+          <input type="text" name="l_name" id="l_name" />
+
+          <label for="m_name">Middle Name</label>
+          <input type="text" name="m_name" id="m_name" /><br />
+
+          <label for="d_o_b">Date of Birth</label>
+          <input type="date" name="d_o_b" id="d_o_b" /><br />
+          <label for="r_number">Registration Number/Matric Number</label>
+          <input type="text" name="r_number" id="r_number" /><br />
+          <label for="gender">Gender</label>
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <label for="p_number">Phone Number</label>
+          <input type="text" name="p_number" id="p_number" /><br />
+          <label for="email"> Email Address</label>
+          <input type="text" name="email" id="email" />
+          <label for="p_o_b">Place of Birth</label>
+          <input type="text" name="p_o_b" id="p_o_b" /><br />
+          <label for="m_o_e">Mode of Entry</label>
+          <select name="m_o_e" id="m_o_e">
+            <option value="jamb">JAMB</option>
+            <option value="de">Direct Entry</option>
+          </select>
+          <label for="marital">Marital Status</label>
+          <select name="marital" id="marital">
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+            <option value="complicated">It's Complicated</option></select
+          ><br />
+          <label for="religion">Religion</label>
+          <select name="religion" id="religion">
+            <option value="christianity">Christianity</option>
+            <option value="islam">Islam</option>
+            <option value="others">Others</option>
+          </select>
+          <label for="nationality">Nationality</label>
+          <select name="nationality" id="nationality">
+            <option value="nigerian">Nigerian</option>
+            <option value="others">Others</option></select
+          ><br />
+          <label for="s_o_o">State of Origin</label>
+          <select name="s_o_o" id="s_o_o">
+            <option value="abia">Abia</option>
+            <option value="adamawa">Adamawa</option>
+            <option value="akwa_ibom">Akwa Ibom</option>
+            <option value="anambra">Anambra</option>
+            <option value="bauchi">Bauchi</option>
+            <option value="bayelsa">Bayelsa</option>
+            <option value="benue">Benue</option>
+            <option value="borno">Borno</option>
+            <option value="cross_river">Cross River</option>
+            <option value="delta">Delta</option>
+            <option value="ebonyi">Ebonyi</option>
+            <option value="edo">Edo</option>
+            <option value="ekiti">Ekiti</option>
+            <option value="enugu">Enugu</option>
+            <option value="gombe">Gombe</option>
+            <option value="imo">Imo</option>
+            <option value="jigawa">Jigawa</option>
+            <option value="kaduna">Kaduna</option>
+            <option value="kano">Kano</option>
+            <option value="katsina">Katsina</option>
+            <option value="kebbi">Kebbi</option>
+            <option value="kogi">Kogi</option>
+            <option value="kwara">Kwara</option>
+            <option value="lagos">Lagos</option>
+            <option value="nasarawa">Nasarawa</option>
+            <option value="niger">Niger</option>
+            <option value="ogun">Ogun</option>
+            <option value="ondo">Ondo</option>
+            <option value="osun">Osun</option>
+            <option value="oyo">Oyo</option>
+            <option value="plateau">Plateau</option>
+            <option value="rivers">Rivers</option>
+            <option value="sokoto">Sokoto</option>
+            <option value="taraba">Taraba</option>
+            <option value="yobe">Yobe</option>
+            <option value="zamfara">Zamfara</option>
+            <option value="fct">F.C.T</option>
+          </select>
+          <label for="town">Home Town</label>
+          <input type="text" name="town" id="town" /><br />
+          <label for="l_g_a">Local Government Area</label>
+          <input type="text" name="l_g_a" id="l_g_a" /><br />
+          <label for="h_address">Home Address</label>
+          <input
+            type="text"
+            name="h_address"
+            id="h_address"
+            class="address"
+          /><br />
+          <label for="p_address">Postal Address</label>
+          <input
+            type="text"
+            name="p_address"
+            id="p_address"
+            class="address"
+          /><br />
+          <h2>Admission Information</h2>
+          <br />
+          <label for="school">School Admitted into</label>
+          <select
+            name="school"
+            id="school"
+            class="school"
+           onchange="chooseDepartment()"
+          >
+            <option value="" disabled selected>Choose Your School</option>
+            <option value="saat">
+              School Agriculture and Agricultural Technology
+            </option>
+            <option value="sbms">School of Basic Medical Sciences</option>
+            <option value="sbcs">School of Basic Clinical Sciences</option>
+            <option value="scs">School of Clinical Sciences</option>
+            <option value="seet">
+              School of Engineering and Engineering Technology
+            </option>
+            <option value="sems">School of Earth and Mineral Sciences</option>
+            <option value="set">School of Environmental Technology</option>
+            <option value="slit">
+              School of Logistics and Innovation Technology
+            </option>
+            <option value="sls">School of Life Sciences</option>
+            <option value="soc">School of Computing</option>
+            <option value="sps">School of Physical Sciences</option></select
+          ><br />
+          <label for="department">Department</label>
+          <select name="department" id="department" class="department">
+            <option value="" disabled selected>
+              Choose Your Department
+            </option></select
+          ><br />
+          <label for="h_address">Home Address</label>
+          <input type="text" name="" id="" />
+          <label for="h_address">Home Address</label>
+          <input type="text" name="" id="" />
+          <label for="h_address">Home Address</label>
+          <input type="text" name="" id="" />
+          <label for="h_address">Home Address</label>
+          <input type="text" name="" id="" />
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
