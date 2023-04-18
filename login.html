@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/5e8ee69a86.js" crossorigin="anonymous"></script>
+
+    <title>Login portal clone</title>
+  </head>
+  <body>
+    <div class="parent_container">
+      <div class="logo_container">
+        <img src="./asset/F__1_-removebg-preview.png" alt="logo" class="logo" />
+      </div>
+      <div class="panel_container">
+        <a href="index.html">Click to Read Registration Procedure</a><br />
+        <h2>Student's Login</h2>
+        <form action="" class="form_container">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="UTME or Matric Number"
+          />
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <br />
+          <button type="submit" class="login">Login</button>
+        </form>
+        <a href="dashboard.html">Forgot Password</a>
+      </div>
+      <div class="footer_container">
+        <p>
+          2023 &#169; FUTA Intergerated Registration and Result System
+          Clone(FIRARSC)
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function changebgimg() {
+        const images = [
+          'url("./asset/bg1 (1).jpg")',
+          'url("./asset/bg1 (2).jpg")',
+          'url("./asset/bg1 (3).jpg")',
+          'url("./asset/bg1 (4).jpg")',
+          'url("./asset/bg1 (5).jpg")',
+        ];
+
+        const body = document.querySelector("body");
+        const bgimg = images[Math.floor(Math.random() * images.length)];
+        body.style.backgroundImage = bgimg;
+      }
+      setInterval(changebgimg, 10000);
+    </script>
+  </body>
+</html>
