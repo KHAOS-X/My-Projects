@@ -78,3 +78,19 @@
         }
     }
     
+    
+        function changebgimg(){
+            const images = [
+            'url("./asset/bg1 (1).jpg")',
+            'url("./asset/bg1 (2).jpg")',
+            'url("./asset/bg1 (3).jpg")',
+            'url("./asset/bg1 (4).jpg")',
+            'url("./asset/bg1 (5).jpg")'
+        ]
+
+        const body = document.querySelector('body')
+        const bgimg = images[Math.floor(Math.random() * images.length)];
+        body.style.backgroundImage = bgimg;
+        }
+        setInterval(changebgimg, 10000)
+    

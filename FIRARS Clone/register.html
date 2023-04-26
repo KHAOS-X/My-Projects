@@ -14,9 +14,9 @@
         <img src="./asset/F__1_-removebg-preview.png" alt="logo" class="logo" />
       </div>
 
-      <h1>Student Registration</h1>
+      <h1 class="heading_1">Student Registration</h1>
 
-      <div class="form_container">
+      <div class="page_container">
         <header>
           <ul>
             <a href=""><li>Biodata</li></a>
@@ -27,7 +27,8 @@
             <a href=""><li>Finalize</li></a>
           </ul>
         </header>
-        <div class="page_container">
+        <div class="form_container">
+          <!-- BIO-DATA INFORMATION FORM -->
           <form action="post" name="biodata_info">
             <h2>Bio-Data</h2>
             <br />
@@ -292,7 +293,7 @@
             <option value="poly">Polygamous</option>
            </select>
             <label for="no_children">Number of Children</label>
-            <input type="number" name="no_children" id="no_children" />
+            <input type="number" name="no_children" id="no_children" /><br>
             <label for="position_in_family">Position in Family</label>
             <input type="number" name="position_in_family" id="position_in_family" />
             <label for="parent_condition">Are your Parents Living Together?</label>
@@ -300,7 +301,7 @@
                 <option value="" disabled selected></option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
-            </select>
+            </select><br>
             <label for="reason_for_split">If no, Why are they living seperately?</label>
             <input type="text" name="reason_for_split" id="reason_for_split" />
             <label for="sponsor_parent">Who is responsible for your school fees?</label>
@@ -309,35 +310,35 @@
                 <option value="father">Father</option>
                 <option value="mother">Mother</option>
                 <option value="guardian">Guardian</option>
-            </select>
+            </select><br>
             <label for="sponsorship_benefit">State any other sponsorship you benefit from from</label>
             <input type="text" name="sponsorship_benefit" id="sponsorship_benefit" />
            
             <h2>Services or Social Activities</h2>
             <br>
-            <label for="club_name">Name of Club</label>
+            <label for="club_name">Club</label>
             <input type="text" name="club_name" id="club_name" />
             <label for="post_club">Post Held</label>
-            <input type="text" name="post_club" id="post_club" placeholder="Post held in club"/>
+            <input type="text" name="post_club" id="post_club" placeholder="Post held in club"/><br>
             <label for="club_remark">Remark</label>
             <input type="text" name="club_remark" id="club_remark" placeholder="Club remarks on achievements" />
-            <label for="organization_name">Name of Organization</label>
-            <input type="text" name="organization_name" id="organization_name" />
+            <label for="organization_name">Organization</label>
+            <input type="text" name="organization_name" id="organization_name" /><br>
             <label for="post_organization">Post Held</label>
             <input type="text" name="post_organization" id="post_organization" placeholder="Post held in Organization"/>
             <label for="organization_remark">Remark</label>
-            <input type="text" name="organization_remark" id="organization_remark" placeholder="Organization remark  on achievements"/>
+            <input type="text" name="organization_remark" id="organization_remark" placeholder="Organization remark  on achievements"/><br>
             
             <h2>Sport/Athletic Information</h2>
             <br>
-            <label for="sport_name">Name of major sport</label>
+            <label for="sport_name">Favorite sport</label>
             <input type="text" name="sport_name" id="sport_name" placeholder="Your favorite sport"/>
             <label for="achievements_main">Achievement</label>
-            <input type="text" name="achievements_main" id="achievements_main" placeholder="Team, Trophies or medals and so on" />
-            <label for="other_sport">Name of other sport</label>
+            <input type="text" name="achievements_main" id="achievements_main" placeholder="Team, Trophies or medals and so on" /><br>
+            <label for="other_sport">Any other sport</label>
             <input type="text" name="other_sport" id="other_sport" placeholder="What other sports do you play" />
             <label for="achievement_other">Achievement</label>
-            <input type="text" name="achievement_other" id="achievement_other"/>
+            <input type="text" name="achievement_other" id="achievement_other"/><br>
 
             <h2>Medical Information</h2>
             <br>
@@ -346,37 +347,1487 @@
                 <option value="" disabled selected></option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
-            </select>
+            </select><br>
             <label for="medical_area">Where? (if Yes)</label>
-            <input type="text" name="medical_area" id="medical_area" />
+            <input type="text" name="medical_area" id="medical_area" placeholder="Where is/are your prescription from?"/><br>
             <label for="treament_description">Description of the Treatment (if Yes)</label>
-            <input type="text" name="treatment_description" id="treatment_description" <i class="fa fa-address-book" aria-hidden="true"></i>>
+            <input type="text" name="treatment_description" id="treatment_description" placeholder="what is/are your prescription"/>
             
             <h2>Life Ambition</h2>
             <br>
-            <label for="ambitions">What is/are your ambition(s) or goal(s)?</label>
-            <textarea name="ambition" id="ambition" />
-            <label for="efforts">What personal effort(s) are you making to achieve your ambition(s) and goal(s)?</label>
-            <textarea name="efforts" id="efforts" />
-            <label for="private_info">What other personal information about yourself do you think is relevant to the Counselling Unit?</label>
-            <textarea name="private_info" id="private_info" />
-            <label for=""></label>
-            <input type="text" name="" id="" />
-            <label for=""></label>
-            <input type="text" name="" id="" />
-            <label for=""></label>
-            <input type="text" name="" id="" />
-            <label for=""></label>
-            <input type="text" name="" id="" />
-            <label for=""></label>
-            <input type="text" name="" id="" />
-            <label for=""></label>
-            <input type="text" name="" id="" />
-            <label for=""></label>
-            <input type="text" name="" id="" />
-            <label for=""></label>
-            <input type="text" name="" id="" />
+            <label for="ambitions">What is/are your ambition(s) or goal(s)?</label><br>
+            <textarea name="ambition" id="ambition"></textarea><br>
+            <label for="efforts">What personal effort(s) are you making to achieve your ambition(s) and goal(s)?</label><br>
+            <textarea name="efforts" id="efforts"></textarea><br>
+            <label for="private_info">What other personal information about yourself do you think is relevant to the Counselling Unit?</label><br>
+            <textarea name="private_info" id="private_info" ></textarea><br>
+            
           </form>
+          <button class="next"></button>
+
+          <!-- ACADEMIC INFORMATION FORM -->
+          <form action="" class="academic_info">
+            <h1>Academic Information</h1>
+            <br>
+            <h2>Primary School information</h2>
+              <br>
+              <table>
+                <tr>
+                  <th>Primary School(s) Attended</th>
+                  <th>From(Year)</th>
+                  <th>To(Year)</th>
+                  <th>Qualification Expected</th>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input_table" placeholder="First School"></td>
+                  <td><select name="1st_admission_year_pri" id="1st_admission_year_pri" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><select name="1st_graduation_year_pri" id="1st_graduation_year_pri" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><input type="text" class="input_table" placeholder="Qualifications Awarded"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input_table" placeholder="Second School"></td>
+                  <td><select name="2nd_admission_year_pri" id="2nd_admission_year_pri" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><select name="2nd_graduation_year_pri" id="2nd_graduation_year_pri" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><input type="text" class="input_table" placeholder="Qualifications Awarded"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input_table" placeholder="Third School"></td>
+                  <td><select name="3rd_admission_year_pri" id="3rd_admission_year_pri" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><select name="3rd_graduation_year_pri" id="3rd_graduation_year_pri" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><input type="text" class="input_table" placeholder="Qualifications Awarded"></td>
+                </tr>
+              </table>
+              <br>
+              <h2>Secondary School Information</h2>
+              <br>
+              <table>
+                <tr>
+                  <th>Secondary School(s) Attended</th>
+                  <th>From(Year)</th>
+                  <th>To(Year)</th>
+                  <th>Qualification Expected</th>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input_table" placeholder="First School"></td>
+                  <td><select name="1st_admission_year_sec" id="1st_admission_year_sec" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><select name="1st_graduation_year_sec" id="1st_graduation_year_sec" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><input type="text" class="input_table" placeholder="Qualifications Awarded"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input_table" placeholder="Second School"></td>
+                  <td><select name="2nd_admission_year_sec" id="2nd_admission_year_sec" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><select name="2nd_graduation_year_sec" id="2nd_graduation_year_sec" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><input type="text" class="input_table" placeholder="Qualifications Awarded"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input_table" placeholder="Third School"></td>
+                  <td><select name="3rd_admission_year_sec" id="3rd_admission_year_sec" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><select name="3rd_graduation_year_sec" id="3rd_graduation_year_sec" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><input type="text" class="input_table" placeholder="Qualifications Awarded"></td>
+                </tr>
+              </table>
+              <br>
+              <h2>Tertiary(Polytechnic/University) Institution(s) Information</h2>
+              <br>
+              <table>
+                <tr>
+                  <th>Tertiary Institution(s) Attended</th>
+                  <th>From(Year)</th>
+                  <th>To(Year)</th>
+                  <th>Qualification Expected</th>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input_table" placeholder="First Institution"></td>
+                  <td><select name="1st_admission_year_tet" id="1st_admission_year_tet" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><select name="1st_graduation_year_tet" id="1st_graduation_year_tet" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><input type="text" class="input_table" placeholder="Qualifications Awarded"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input_table" placeholder="Second Institution"></td>
+                  <td><select name="2nd_admission_year_tet" id="2nd_admission_year_tet" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><select name="2nd_graduation_year_tet" id="2nd_graduation_year_tet" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><input type="text" class="input_table" placeholder="Qualifications Awarded"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input_table" placeholder="Third Institution"></td>
+                  <td><select name="3rd_admission_year_tet" id="3rd_admission_year_tet" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><select name="3rd_admission_year_tet" id="3rd_admission_year_tet" class="select_table">
+                    <option value="" disabled selected></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><input type="text" class="input_table" placeholder="Qualifications Awarded"></td>
+                </tr>
+              </table>
+              <br>
+              <h2>Result Selection with Dates</h2>
+              <h4>(Complete the rows and column below as appropriate)</h4>
+              <br>
+              <p class="warning">All inputted information will be verified from the relevant examination body(ies). Any falsification will lead to cancellation of your provisional admission and all payments made will be fortified.</p>
+              <br>
+              <table>
+                <tr>
+                  <th class="s_n"></th>
+                  <th></th>
+                  <th>1st Sitting</th>
+                  <th>2nd Sitting</th>
+                </tr>
+                <tr>
+                  <td class="s_n"></td>
+                  <th>Examination Number</th>
+                  <td><input type="text" name="exam_number" id="exam_number" class="input_table"></td>
+                  <td><input type="text" name="exam_number_2nd_sitting" id="exam_number_2nd_sitting" class="input_table"></td>
+                  
+                </tr>
+                <tr>
+                  <td class="s_n"></td>
+                  <td>Examination Year</td>
+                  <td><select name="1st_examination_year" id="1st_examination_year" class="select_table_result">
+                    <option value="" disabled selected> YYYY</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                  <td><select name="2nd_examination_year" id="2nd_examination_year" class="select_table_result">
+                    <option value="" disabled selected>YYYY</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="s_n"></td>
+                  <td>Examination Body</td>
+                  <td><select name="exam_body_1" id="exam_body_1" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="waec">WAEC</option>
+                    <option value="waec_gce">WAEC GCE</option>
+                    <option value="neco">NECO</option>
+                    <option value="neco_gce">NECO GCE</option>
+                  </select></td>
+                  <td><select name="exam_body_2" id="exam_body_2" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="waec">WAEC</option>
+                    <option value="waec_gce">WAEC GCE</option>
+                    <option value="neco">NECO</option>
+                    <option value="neco_gce">NECO GCE</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="blank_cells"></td>
+                  <td class="blank_cells"></td>
+                  <td class="blank_cells"></td>
+                  <td class="blank_cells"></td>
+                  
+                </tr>
+                <tr>
+                  <td class="s_n"></td>
+                  <th>Subjects</th>
+                  <th>Grade</th>
+                  <th>Grade</th>
+                </tr>
+                <tr>
+                  <td class="s_n">1</td>
+                  <td><select name="subjects_1" id="subjects_1" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="commerce">Commerce</option>
+                    <option value="accounting">Financial Accounting</option>
+                    <option value="crs">Christian Religious Studies</option>
+                    <option value="economics">Economics</option>
+                    <option value="geography">Geography</option>
+                    <option value="government">Government</option>
+                    <option value="history">History</option>
+                    <option value="irs">Islamic Studies</option>
+                    <option value="literature">Literature in English</option>
+                    <option value="civic">Civic Education</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="english">English Language</option>
+                    <option value="french">French</option>
+                    <option value="hausa">Hausa</option>
+                    <option value="igbo">Igbo</option>
+                    <option value="yoruba">Yoruba</option>
+                    <option value="f_maths">Further Mathematics</option>
+                    <option value="maths">General Mathematics</option>
+                    <option value="agric_sci">Agricultural Science</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="pe">Physical Education</option>
+                    <option value="physics">Physics</option>
+                    <option value="he">Health Education</option>
+                    <option value="auto_mech">Auto Mechanics</option>
+                    <option value="building">Building Construction</option>
+                    <option value="metal_work">Metal Work</option>
+                    <option value="t_drawing">Technical Drawing</option>
+                    <option value="woodwork">Woodwork</option>
+                    <option value="b_electricity">Basic Electricity</option>
+                    <option value="b_electronic">Basic Electronics</option>
+                    <option value="clothing">Clothing and Textiles</option>
+                    <option value="food_nut">Food and Nutrition</option>
+                    <option value="home_mgmnt">Home Management</option>
+                    <option value="v_arts">Visual Arts</option>
+                    <option value="husbandry">Animal Husbandry</option>
+                    <option value="computer_sci">Computer Science</option>
+
+                  </select></td>
+                  <td><select name="1st_grade_1" id="1st_grade_1" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                  <td><select name="2nd_grade_1" id="2nd_grade_1" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="s_n">2</td>
+                  <td><select name="subjects_2" id="subjects_2" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="commerce">Commerce</option>
+                    <option value="accounting">Financial Accounting</option>
+                    <option value="crs">Christian Religious Studies</option>
+                    <option value="economics">Economics</option>
+                    <option value="geography">Geography</option>
+                    <option value="government">Government</option>
+                    <option value="history">History</option>
+                    <option value="irs">Islamic Studies</option>
+                    <option value="literature">Literature in English</option>
+                    <option value="civic">Civic Education</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="english">English Language</option>
+                    <option value="french">French</option>
+                    <option value="hausa">Hausa</option>
+                    <option value="igbo">Igbo</option>
+                    <option value="yoruba">Yoruba</option>
+                    <option value="f_maths">Further Mathematics</option>
+                    <option value="maths">General Mathematics</option>
+                    <option value="agric_sci">Agricultural Science</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="pe">Physical Education</option>
+                    <option value="physics">Physics</option>
+                    <option value="he">Health Education</option>
+                    <option value="auto_mech">Auto Mechanics</option>
+                    <option value="building">Building Construction</option>
+                    <option value="metal_work">Metal Work</option>
+                    <option value="t_drawing">Technical Drawing</option>
+                    <option value="woodwork">Woodwork</option>
+                    <option value="b_electricity">Basic Electricity</option>
+                    <option value="b_electronic">Basic Electronics</option>
+                    <option value="clothing">Clothing and Textiles</option>
+                    <option value="food_nut">Food and Nutrition</option>
+                    <option value="home_mgmnt">Home Management</option>
+                    <option value="v_arts">Visual Arts</option>
+                    <option value="husbandry">Animal Husbandry</option>
+                    <option value="computer_sci">Computer Science</option>
+
+                  </select></td>
+                  <td><select name="1st_grade_2" id="1st_grade_2" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                  <td><select name="2nd_grade_2" id="2nd_grade_2" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="s_n">3</td>
+                  <td><select name="subjects_3" id="subjects_3" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="commerce">Commerce</option>
+                    <option value="accounting">Financial Accounting</option>
+                    <option value="crs">Christian Religious Studies</option>
+                    <option value="economics">Economics</option>
+                    <option value="geography">Geography</option>
+                    <option value="government">Government</option>
+                    <option value="history">History</option>
+                    <option value="irs">Islamic Studies</option>
+                    <option value="literature">Literature in English</option>
+                    <option value="civic">Civic Education</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="english">English Language</option>
+                    <option value="french">French</option>
+                    <option value="hausa">Hausa</option>
+                    <option value="igbo">Igbo</option>
+                    <option value="yoruba">Yoruba</option>
+                    <option value="f_maths">Further Mathematics</option>
+                    <option value="maths">General Mathematics</option>
+                    <option value="agric_sci">Agricultural Science</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="pe">Physical Education</option>
+                    <option value="physics">Physics</option>
+                    <option value="he">Health Education</option>
+                    <option value="auto_mech">Auto Mechanics</option>
+                    <option value="building">Building Construction</option>
+                    <option value="metal_work">Metal Work</option>
+                    <option value="t_drawing">Technical Drawing</option>
+                    <option value="woodwork">Woodwork</option>
+                    <option value="b_electricity">Basic Electricity</option>
+                    <option value="b_electronic">Basic Electronics</option>
+                    <option value="clothing">Clothing and Textiles</option>
+                    <option value="food_nut">Food and Nutrition</option>
+                    <option value="home_mgmnt">Home Management</option>
+                    <option value="v_arts">Visual Arts</option>
+                    <option value="husbandry">Animal Husbandry</option>
+                    <option value="computer_sci">Computer Science</option>
+
+                  </select></td>
+                  <td><select name="1st_grade_3" id="1st_grade_3" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                  <td><select name="2nd_grade_3" id="2nd_grade_3" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="s_n">4</td>
+                  <td><select name="subjects_4" id="subjects_4" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="commerce">Commerce</option>
+                    <option value="accounting">Financial Accounting</option>
+                    <option value="crs">Christian Religious Studies</option>
+                    <option value="economics">Economics</option>
+                    <option value="geography">Geography</option>
+                    <option value="government">Government</option>
+                    <option value="history">History</option>
+                    <option value="irs">Islamic Studies</option>
+                    <option value="literature">Literature in English</option>
+                    <option value="civic">Civic Education</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="english">English Language</option>
+                    <option value="french">French</option>
+                    <option value="hausa">Hausa</option>
+                    <option value="igbo">Igbo</option>
+                    <option value="yoruba">Yoruba</option>
+                    <option value="f_maths">Further Mathematics</option>
+                    <option value="maths">General Mathematics</option>
+                    <option value="agric_sci">Agricultural Science</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="pe">Physical Education</option>
+                    <option value="physics">Physics</option>
+                    <option value="he">Health Education</option>
+                    <option value="auto_mech">Auto Mechanics</option>
+                    <option value="building">Building Construction</option>
+                    <option value="metal_work">Metal Work</option>
+                    <option value="t_drawing">Technical Drawing</option>
+                    <option value="woodwork">Woodwork</option>
+                    <option value="b_electricity">Basic Electricity</option>
+                    <option value="b_electronic">Basic Electronics</option>
+                    <option value="clothing">Clothing and Textiles</option>
+                    <option value="food_nut">Food and Nutrition</option>
+                    <option value="home_mgmnt">Home Management</option>
+                    <option value="v_arts">Visual Arts</option>
+                    <option value="husbandry">Animal Husbandry</option>
+                    <option value="computer_sci">Computer Science</option>
+
+                  </select></td>
+                  <td><select name="1st_grade_4" id="1st_grade_4" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                  <td><select name="2nd_grade_4" id="2nd_grade_4" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="s_n">5</td>
+                  <td><select name="subjects_5" id="subjects_5" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="commerce">Commerce</option>
+                    <option value="accounting">Financial Accounting</option>
+                    <option value="crs">Christian Religious Studies</option>
+                    <option value="economics">Economics</option>
+                    <option value="geography">Geography</option>
+                    <option value="government">Government</option>
+                    <option value="history">History</option>
+                    <option value="irs">Islamic Studies</option>
+                    <option value="literature">Literature in English</option>
+                    <option value="civic">Civic Education</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="english">English Language</option>
+                    <option value="french">French</option>
+                    <option value="hausa">Hausa</option>
+                    <option value="igbo">Igbo</option>
+                    <option value="yoruba">Yoruba</option>
+                    <option value="f_maths">Further Mathematics</option>
+                    <option value="maths">General Mathematics</option>
+                    <option value="agric_sci">Agricultural Science</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="pe">Physical Education</option>
+                    <option value="physics">Physics</option>
+                    <option value="he">Health Education</option>
+                    <option value="auto_mech">Auto Mechanics</option>
+                    <option value="building">Building Construction</option>
+                    <option value="metal_work">Metal Work</option>
+                    <option value="t_drawing">Technical Drawing</option>
+                    <option value="woodwork">Woodwork</option>
+                    <option value="b_electricity">Basic Electricity</option>
+                    <option value="b_electronic">Basic Electronics</option>
+                    <option value="clothing">Clothing and Textiles</option>
+                    <option value="food_nut">Food and Nutrition</option>
+                    <option value="home_mgmnt">Home Management</option>
+                    <option value="v_arts">Visual Arts</option>
+                    <option value="husbandry">Animal Husbandry</option>
+                    <option value="computer_sci">Computer Science</option>
+
+                  </select></td>
+                  <td><select name="1st_grade_5" id="1st_grade_5" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </sele1st</td>
+ 5                <td><select name="2nd_grade_5" id="2nd_grade_5" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="s_n">6</td>
+                  <td><select name="subjects_6" id="subjects_6" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="commerce">Commerce</option>
+                    <option value="accounting">Financial Accounting</option>
+                    <option value="crs">Christian Religious Studies</option>
+                    <option value="economics">Economics</option>
+                    <option value="geography">Geography</option>
+                    <option value="government">Government</option>
+                    <option value="history">History</option>
+                    <option value="irs">Islamic Studies</option>
+                    <option value="literature">Literature in English</option>
+                    <option value="civic">Civic Education</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="english">English Language</option>
+                    <option value="french">French</option>
+                    <option value="hausa">Hausa</option>
+                    <option value="igbo">Igbo</option>
+                    <option value="yoruba">Yoruba</option>
+                    <option value="f_maths">Further Mathematics</option>
+                    <option value="maths">General Mathematics</option>
+                    <option value="agric_sci">Agricultural Science</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="pe">Physical Education</option>
+                    <option value="physics">Physics</option>
+                    <option value="he">Health Education</option>
+                    <option value="auto_mech">Auto Mechanics</option>
+                    <option value="building">Building Construction</option>
+                    <option value="metal_work">Metal Work</option>
+                    <option value="t_drawing">Technical Drawing</option>
+                    <option value="woodwork">Woodwork</option>
+                    <option value="b_electricity">Basic Electricity</option>
+                    <option value="b_electronic">Basic Electronics</option>
+                    <option value="clothing">Clothing and Textiles</option>
+                    <option value="food_nut">Food and Nutrition</option>
+                    <option value="home_mgmnt">Home Management</option>
+                    <option value="v_arts">Visual Arts</option>
+                    <option value="husbandry">Animal Husbandry</option>
+                    <option value="computer_sci">Computer Science</option>
+
+                  </select></td>
+                  <td><select name="1st_grade_6" id="1st_grade_6" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                  <td><select name="2nd_grade_6" id="2nd_grade_6" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="s_n">7</td>
+                  <td><select name="subjects_7" id="subjects_7" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="commerce">Commerce</option>
+                    <option value="accounting">Financial Accounting</option>
+                    <option value="crs">Christian Religious Studies</option>
+                    <option value="economics">Economics</option>
+                    <option value="geography">Geography</option>
+                    <option value="government">Government</option>
+                    <option value="history">History</option>
+                    <option value="irs">Islamic Studies</option>
+                    <option value="literature">Literature in English</option>
+                    <option value="civic">Civic Education</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="english">English Language</option>
+                    <option value="french">French</option>
+                    <option value="hausa">Hausa</option>
+                    <option value="igbo">Igbo</option>
+                    <option value="yoruba">Yoruba</option>
+                    <option value="f_maths">Further Mathematics</option>
+                    <option value="maths">General Mathematics</option>
+                    <option value="agric_sci">Agricultural Science</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="pe">Physical Education</option>
+                    <option value="physics">Physics</option>
+                    <option value="he">Health Education</option>
+                    <option value="auto_mech">Auto Mechanics</option>
+                    <option value="building">Building Construction</option>
+                    <option value="metal_work">Metal Work</option>
+                    <option value="t_drawing">Technical Drawing</option>
+                    <option value="woodwork">Woodwork</option>
+                    <option value="b_electricity">Basic Electricity</option>
+                    <option value="b_electronic">Basic Electronics</option>
+                    <option value="clothing">Clothing and Textiles</option>
+                    <option value="food_nut">Food and Nutrition</option>
+                    <option value="home_mgmnt">Home Management</option>
+                    <option value="v_arts">Visual Arts</option>
+                    <option value="husbandry">Animal Husbandry</option>
+                    <option value="computer_sci">Computer Science</option>
+
+                  </select></td>
+                  <td><select name="1st_grade_7" id="1st_grade_7" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                  <td><select name="2nd_grade_7" id="2nd_grade_7" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="s_n">8</td>
+                  <td><select name="subjects_8" id="subjects_8" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="commerce">Commerce</option>
+                    <option value="accounting">Financial Accounting</option>
+                    <option value="crs">Christian Religious Studies</option>
+                    <option value="economics">Economics</option>
+                    <option value="geography">Geography</option>
+                    <option value="government">Government</option>
+                    <option value="history">History</option>
+                    <option value="irs">Islamic Studies</option>
+                    <option value="literature">Literature in English</option>
+                    <option value="civic">Civic Education</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="english">English Language</option>
+                    <option value="french">French</option>
+                    <option value="hausa">Hausa</option>
+                    <option value="igbo">Igbo</option>
+                    <option value="yoruba">Yoruba</option>
+                    <option value="f_maths">Further Mathematics</option>
+                    <option value="maths">General Mathematics</option>
+                    <option value="agric_sci">Agricultural Science</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="pe">Physical Education</option>
+                    <option value="physics">Physics</option>
+                    <option value="he">Health Education</option>
+                    <option value="auto_mech">Auto Mechanics</option>
+                    <option value="building">Building Construction</option>
+                    <option value="metal_work">Metal Work</option>
+                    <option value="t_drawing">Technical Drawing</option>
+                    <option value="woodwork">Woodwork</option>
+                    <option value="b_electricity">Basic Electricity</option>
+                    <option value="b_electronic">Basic Electronics</option>
+                    <option value="clothing">Clothing and Textiles</option>
+                    <option value="food_nut">Food and Nutrition</option>
+                    <option value="home_mgmnt">Home Management</option>
+                    <option value="v_arts">Visual Arts</option>
+                    <option value="husbandry">Animal Husbandry</option>
+                    <option value="computer_sci">Computer Science</option>
+
+                  </select></td>
+                  <td><select name="1st_grade_8" id="1st_grade_8" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                  <td><select name="2nd_grade_8" id="2nd_grade_8" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td class="s_n">9</td>
+                  <td><select name="subjects_9" id="subjects_9" class="select_table_result">
+                    <option value="" disabled selected></option>
+                    <option value="commerce">Commerce</option>
+                    <option value="accounting">Financial Accounting</option>
+                    <option value="crs">Christian Religious Studies</option>
+                    <option value="economics">Economics</option>
+                    <option value="geography">Geography</option>
+                    <option value="government">Government</option>
+                    <option value="history">History</option>
+                    <option value="irs">Islamic Studies</option>
+                    <option value="literature">Literature in English</option>
+                    <option value="civic">Civic Education</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="english">English Language</option>
+                    <option value="french">French</option>
+                    <option value="hausa">Hausa</option>
+                    <option value="igbo">Igbo</option>
+                    <option value="yoruba">Yoruba</option>
+                    <option value="f_maths">Further Mathematics</option>
+                    <option value="maths">General Mathematics</option>
+                    <option value="agric_sci">Agricultural Science</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="pe">Physical Education</option>
+                    <option value="physics">Physics</option>
+                    <option value="he">Health Education</option>
+                    <option value="auto_mech">Auto Mechanics</option>
+                    <option value="building">Building Construction</option>
+                    <option value="metal_work">Metal Work</option>
+                    <option value="t_drawing">Technical Drawing</option>
+                    <option value="woodwork">Woodwork</option>
+                    <option value="b_electricity">Basic Electricity</option>
+                    <option value="b_electronic">Basic Electronics</option>
+                    <option value="clothing">Clothing and Textiles</option>
+                    <option value="food_nut">Food and Nutrition</option>
+                    <option value="home_mgmnt">Home Management</option>
+                    <option value="v_arts">Visual Arts</option>
+                    <option value="husbandry">Animal Husbandry</option>
+                    <option value="computer_sci">Computer Science</option>
+
+                  </select></td>
+                  <td><select name="1st_grade_9" id="1st_grade_9" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                  <td><select name="2nd_grade_9" id="2nd_grade_9" class="select_table_result">
+                    <option value="" disableld selected></option>
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="b3">B3</option>
+                    <option value="c4">C4</option>
+                    <option value="c5">C5</option>
+                    <option value="c6">C6</option>
+                    <option value="d7">D7</option>
+                    <option value="e8">E8</option>
+                    <option value="f9">F9</option>
+                  </select></td>
+                </tr>
+              </table>
+
+          </form>
+          <button class="next"></button>
         </div>
       </div>
     </div>
