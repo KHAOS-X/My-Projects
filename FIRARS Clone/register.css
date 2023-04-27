@@ -186,3 +186,8 @@ tr{
     margin: 0;
 }
 
+/* FILE UPLOAD */
+.input_file{
+    border: none;
+    border-radius: 0%;
+}
