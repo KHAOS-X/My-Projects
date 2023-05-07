@@ -1,4 +1,4 @@
-
+ // SELECT INPUT CONFIGURATION
       var lookup ={};
        
         lookup['saat'] = [
@@ -77,8 +77,8 @@
             }
         }
     }
-    
-    
+
+// BACKGROUND IMAGE CHANGER    
         function changebgimg(){
             const images = [
             'url("./asset/bg1 (1).jpg")',
@@ -94,3 +94,23 @@
         }
         setInterval(changebgimg, 10000)
     
+//  DYNAMIC PAGE SWITCH
+        
+
+        function showForm(formIndex, colorCode){
+          var navButton = document.querySelectorAll(".nav_button")
+        var navPanel = document.querySelectorAll(".form_panel")
+          navButton.forEach(function(node){
+            node.style.backgroundColor="";
+            node.style.color="";
+          });
+          navButton[formIndex].style.backgroundColor = colorCode;
+          navButton[formIndex].style.color ='white';
+          navPanel.forEach(function(node){
+            node.style.display="none";
+          });
+          navPanel[formIndex].style.display="block";
+          navPanel[formIndex].style.backgroundColor=colorCode;
+
+        }
+        showForm(0, '#f6f6c9')
