@@ -105,12 +105,12 @@
             node.style.color="";
           });
           navButton[formIndex].style.backgroundColor = colorCode;
-          navButton[formIndex].style.color ='white';
+          navButton[formIndex].style.color ='black';
           navPanel.forEach(function(node){
             node.style.display="none";
           });
           navPanel[formIndex].style.display="block";
           navPanel[formIndex].style.backgroundColor=colorCode;
 
-        }
-        showForm(0, '#f6f6c9')
+        };
+      window.onload= showForm(0, '#f6f6c9')
