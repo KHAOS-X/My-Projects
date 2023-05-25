@@ -1,7 +1,7 @@
  // SELECT INPUT CONFIGURATION
       var lookup ={};
        
-        lookup['saat'] = [
+        lookup['SAAT'] = [
           "Agricultural Extension and Communication Technology",
           "Agricultural and Resource Economics",
           "Animal Production and Health",
@@ -11,10 +11,10 @@
           "Forestry and Wood Technology",
           "Food Science and Technology",
         ];
-        lookup['sbms'] = ["To be Added"];
-        lookup['sbcs'] = ["To be Added"];
-        lookup['scs']= ["To be Added"];
-        lookup['seet']= [
+        lookup['SBMS'] = ["To be Added"];
+        lookup['SBCS'] = ["To be Added"];
+        lookup['SCS']= ["To be Added"];
+        lookup['SEET']= [
           "Agricultural Engineering",
           "Civil Engineering",
           "Electrical and Electronics Engineering",
@@ -22,14 +22,14 @@
           "Metallurgical and Materials Engineering",
           "Mining Engineering",
         ];
-        lookup['sems']= [
+        lookup['SEMS']= [
           "Applied Geophysics",
           "Applied Geology",
           "Meteorology",
           "Marine Science and Technology",
           "Remote Sensing and Geoscience Information Systems",
         ];
-        lookup['set']= [
+        lookup['SET']= [
           "Architecture",
           "Building Technology",
           "Estate Management",
@@ -38,13 +38,13 @@
           "Urban and Regional Planning",
           "Surveying and Geoinformatics",
         ];
-        lookup['slit']=[
+        lookup['SLIT']=[
           "Project Management Technology",
           "Transport Management Technology",
           "Library Management Technology",
           "Entrepeneurship Management Technology",
         ];
-        lookup['sls']= ["Biochemistry", "Biology", "Biotechnology", "Microbiology"];
+        lookup['SLS']= ["Biochemistry", "Biology", "Biotechnology", "Microbiology"];
         lookup['soc']= [
           "Computer Science",
           "Cybersecurity",
@@ -52,7 +52,7 @@
           "Information Systems",
           "Software Engineering",
         ];
-        lookup['sps']= [
+        lookup['SPS']= [
           "Chemistry",
           "Mathematical Sciences",
           "Physics",

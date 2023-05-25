@@ -7,7 +7,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6rem;
-    background-color: #f6f6c9;
+    background-color: whitesmoke;
     background-image: url(./asset/bg1\ \(3\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,12 +47,14 @@ header{
     color: black;
     font-size:14px;
     list-style: none;
+    font-weight: 500;
 }
 .success{
-     margin-bottom: 30px;
+    margin-bottom: 30px;
     background-color: rgba(0, 255, 0, 0.5);
     border: 2px solid green;
     border-radius: 5px;
+    padding: 30px;
 }
 
 .nav_button{
@@ -138,7 +140,7 @@ table,td,th{
     display: flex;
 }
 .next{
-    background-color: blue;
+    background-color: #A020F0;
     width: 100px;
     height: 50px;
     transition: 0.5s width ease-in-out;
@@ -148,4 +150,5 @@ table,td,th{
 .next:hover{
     width: 300px;
     color: white;
+    font-weight:800;
 }

@@ -50,7 +50,7 @@ include 'function.php';
           ?>
           <div class="success">
             <p>Registration Completed Successfully</p>
-            <p>Here are your details as inputted</p>
+            <p>Here are your details as inputted:</p>
             <ul>
               <li>Name: <em><?= esc_str($data['f_name']) ?> <?= esc_str($data['m_name']) ?> <?= esc_str($data['l_name']) ?></em></li>
               <li>Date of Birth: <em><?= esc_str($data['d_o_b']) ?></em></li>
@@ -241,29 +241,29 @@ include 'function.php';
                             <select name="school_admitted" id="school_admitted" class="school"
                                 onchange="chooseDepartment()">
                                 <option value="" disabled selected>Choose Your School</option>
-                                <option value="saat">
+                                <option value="SAAT">
                                     School Agriculture and Agricultural Technology
                                 </option>
-                                <option value="sbms">School of Basic Medical Sciences</option>
-                                <option value="sbcs">
+                                <option value="SBMS">School of Basic Medical Sciences</option>
+                                <option value="SBCS">
                                     School of Basic Clinical Sciences
                                 </option>
-                                <option value="scs">School of Clinical Sciences</option>
-                                <option value="seet">
+                                <option value="SCS">School of Clinical Sciences</option>
+                                <option value="SEET">
                                     School of Engineering and Engineering Technology
                                 </option>
-                                <option value="sems">
+                                <option value="SEMS">
                                     School of Earth and Mineral Sciences
                                 </option>
-                                <option value="set">
+                                <option value="SET">
                                     School of Environmental Technology
                                 </option>
-                                <option value="slit">
+                                <option value="SLIT">
                                     School of Logistics and Innovation Technology
                                 </option>
-                                <option value="sls">School of Life Sciences</option>
-                                <option value="soc">School of Computing</option>
-                                <option value="sps">School of Physical Sciences</option>
+                                <option value="SLS">School of Life Sciences</option>
+                                <option value="SOC">School of Computing</option>
+                                <option value="SPS">School of Physical Sciences</option>
                             </select>
                             <label for="department">Department</label>
                             <select name="department" id="department" class="department">

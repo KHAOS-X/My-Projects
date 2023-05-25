@@ -375,7 +375,7 @@ if (empty($_POST['postal_address'])) {
 // School Admiited Into
 if (!empty($_POST['school_admitted'])) {
     $school_admitted = $_POST['school_admitted'];
-    $allowed_option_school = ["seet", "saat", "set", "sems", "soc", "sbms", "scs", "sbcs", "slit", "sls", "sps"];
+    $allowed_option_school = ["SEET", "SAAT", "SET", "SEMS", "SOC", "SBMS", "SCS", "SBCS", "SLIT", "SLS", "SPS"];
     if (!in_array($school_admitted, $allowed_option_school)) {
         $errors[] = "Please select the school you were admitted into";
     }
