@@ -4,6 +4,7 @@ session_start();
 
 include 'function.php';
 
+
 ?>
 
 <!DOCTYPE html>
@@ -270,6 +271,52 @@ include 'function.php';
                                 <option value="null" disabled selected>
                                     Choose Your Department
                                 </option>
+                                <option value="ACT">Agricultural Extension and Communication Technology</option>
+                                <option value="ARE">Agricultural and Resource Economics</option>
+                                <option value="AGE">Agricultural Engineering</option>
+                                <option value="AGP">Applied Geophysics</option>
+                                <option value="APG">Applied Geology</option>
+                                <option value="ARC">Architecture</option>
+                                <option value="BCH">Biochemistry</option>
+                                <option value="BIO">Biology</option>
+                                <option value="BTH">Biotechnology</option>
+                                <option value="BTC">Building Technology</option>
+                                <option value="CHE">Chemistry</option>
+                                <option value="CVE">Civil Engineering</option>
+                                <option value="CSC">Computer Science</option>
+                                <option value="CSP">Crop Soil and Pest Management</option>
+                                <option value="CYS">Cybersecurity</option>
+                                <option value="EWM">Ecotourism and Wildlife Management</option>
+                                <option value="EEE">Electrical and Electronics Engineering</option>
+                                <option value="EMT">Entrepeneurship Management Technology</option>
+                                <option value="ESM">Estate Management</option>
+                                <option value="FAT">Fishery  and Aquaculture Technology</option>
+                                <option value="FST">Food Science and Technology</option>
+                                <option value="FWT">Forestry and Wood Technology</option>
+                                <option value="GNS">General Studies</option>
+                                <option value="IDD">Industrial Design</option>
+                                <option value="ICT">Information and Communication Technology</option>
+                                <option value="IFS">Information Systems</option>
+                                <option value="LMT">Library Management Technology</option>
+                                <option value="MST">Marine Science and Technology</option>
+                                <option value="MTS">Mathematical Sciences</option>
+                                <option value="MEE">Mechanical Engineering</option>
+                                <option value="MME">Metallurgical and Materials Engineering</option>
+                                <option value="MET">Meteorology</option>
+                                <option value="MCB">Microbiology</option>
+                                <option value="MNE">Mining Engineering</option>
+                                <option value="PHY">Physics</option>
+                                <option value="PMT">Project Management Technology</option>
+                                <option value="QSV">Quantity Surveying</option>
+                                <option value="RSG">Remote Sensing and Geoscience Information Systems</option>
+                                <option value="SEN">Software Engineering</option>
+                                <option value="STA">Statistics</option>
+                                <option value="SVG">Surveying and Geoinformatics</option>
+                                <option value="TMT">Transport Management Technology</option>
+                                <option value="URP">Urban and Regional Planning</option>
+                               
+                                
+
                             </select>
                         </div>
                         <br />

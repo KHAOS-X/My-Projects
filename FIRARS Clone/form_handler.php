@@ -1,6 +1,8 @@
 <?php 
 session_start();
 
+
+
 // Local Variable List
     $title ='';
     $f_name ='';
@@ -385,17 +387,17 @@ else{
 }
 
 
-// // Department
-// if (!empty($_POST['department'])) {
-//     $department = $_POST['department'];
-//     $disallowed_option_department = ["", " "];
-//     if (in_array($department, $disallowed_option_department)) {
-//         $errors[] = "Please select your department";
-//     }
-// }
-// else{
-//     $errors[] = "Department has not been selected";
-// }
+// Department
+if (!empty($_POST['department'])) {
+    $department = $_POST['department'];
+    $allowed_option_department = ["ACT", "ARE", "AGE", "AGP", "APG", "ARC", "BCH", "BIO", "BTH", "BTC", "CHE", "CVE", "CSC", "CSP", "CYS", "EWM", "EEE", "EMT", "ESM", "FAT", "FST", "FWT", "GNS", "IDD", "ICT", "IFS", "LMT", "MST", "MTS", "MEE", "MME", "MET", "MCB", "MNE", "PHY", "PMT", "QSV", "RSG", "SEN", "STA", "SVG", "TMT", "URP"];
+    if (!in_array($department, $allowed_option_department)) {
+        $errors[] = "Please select your department";
+    }
+}
+else{
+    $errors[] = "Department has not been selected";
+}
 
 
 // Previous History
@@ -835,7 +837,47 @@ else {
     $_SESSION['data'] = $data;
     header('Location:register.php?result=success');
     die();
+    
 }
 
+
+function database(){
+    // Database Configuration
+    $servername = "Local Instance MYSQL80";
+    $db_host = "DESKTOP-VUH4IFI";
+    $db_username = "root";
+    $db_password = "password1234";
+    $db_name = "student_information";
+    $db_table = "studentsinfo";
+
+    // Data To save
+    $f_name = $mysqli->real_escape_string($data['f_name']);
+    $l_name = $mysqli->real_escape_string($data['l_name']);
+    $m_name = $mysqli->real_escape_string($data['m_name']);
+    $r_number = $mysqli->real_escape_string($data['r_number']);
+    $school_admitted = $mysqli->real_escape_string($data['school_admitted']);
+   
+ $connection = mysql_connect($servername, $db_username, $db_password, $db_name);
+
+// Check for Connection
+if (mysql_connect_error()){
+     "Connection Failed";
+}
+else {
+    echo "Connection Successful";
+};
+
+$sqlquery = "INSERT INTO Students ( FirstName, LastName, MiddleName, RegistrationNumber, SchoolAdmittedTo)
+ VALUES ( $f_name, $l_name, $m_name, $r_number, $school_admitted )";
+
+if ($connection->query($sqlquery) === TRUE) {
+    echo "Record inserted successfully";
+}
+else{
+    echo "Error occurred during insertion";
+};
+
+}
+ database();
 
  ?>
