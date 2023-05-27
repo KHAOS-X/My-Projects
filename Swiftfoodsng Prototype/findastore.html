@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="findastorestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="//code.tidio.co/sjluxqztaootrfgnnxqa9ihbdp2ixukg.js" async></script>
+    <title>Find a store</title>
+</head>
+<body>
+    <div id="navbar">
+        <img id="logo" src="./Images/Logo.png">
+        <nav id="header"> 
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="cart.html">Cart<sup><span id="cart_item_count" ></span></sup></a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="mamaputin.html">Menu</a></li>
+          </ul>
+        </nav>
+    </div>
+    <div id="section_a">
+        <div id="order_button"><a href="">Order now <img src="./Images/Vector.png"></a></div>
+        <h1>Find a store</h1>
+        <div id="search_box">
+            <input type="search" name="search_bar" id="search_bar">
+            <input type="submit" value="Search" id="search">
+        </div>
+    </div>
+    <div id="section_b">
+        <div id="map"><img src="./Images/image 100.png"></div>
+        <div id="map_info">
+            <div class="green_box"> Store Social</div>
+            <div class="image_row">
+                <img class="icons" src="./Images/akar-icons_facebook-fill.png">
+                <img class="icons" src="./Images/ant-design_twitter-circle-filled.png">
+                <img class="icons" src="./Images/entypo-social_instagram.png">
+                <img class="icons" src="./Images/akar-icons_telegram-fill.png">
+            </div>
+            <div class="green_box">Store Information</div>
+            <div class="text">Address:</div>
+            <div class="text">Website:</div>
+            <div class="text">Email:</div>
+            <div class="text">Phone No.:</div>
+            <div class="image_row">
+                <img class="icons" src="./Images/Vector (3).png">
+                <img class="icons" src="./Images/Vector (4).png">
+                <img class="icons" src="./Images/Vector (5).png">
+            </div>
+            <div>
+                <img class="img" src="./Images/Ellipse 87.png"> Present Location<br>
+                <img id="line" src="./Images/Line 42.png"><br>
+                <img class="img" src="./Images/logos_google-maps.png"> Destination
+                <input type="button" value="GO" name="GO" id="Go">
+            </div>
+            <div></div>
+            <div id="last_row">
+                <div id="blue_row">Destination</div>
+                50km About 8mins
+                <ol>
+                    <li>Head North</li>
+                    <li>Take a Left</li>
+                    <li>Walk straight</li>
+                    <li> Few Minutes left</li>
+                    <li> Destination Reached</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div id="left_c">
+        <h1> Got Something to ask?</h1>
+        <h2>Send us an Email </h2>
+        <form name="myform3" onsubmit="return validateForm3()">
+        <input type="text" name="Email" id="Email" placeholder="   yourname@email.com">
+        <input type="submit" value="Send" id="submit">
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div id="footer_colI">
+                    <h1><a href=""><img src="./Images/Logo.png"></a></h1>
+                </div>
+                <div class="footer-col " id="col_a">
+                    <h4><a href="">Home</a></h4>
+                    <ul>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Order</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">Bookings</a></li>
+                        <li><a href="">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="col_b">
+                    <h4><a href="">Support</a></h4>
+                    <ul>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Safety Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="col_c">
+                    <h4><a href="">Legal</a></h4>
+                    <ul>
+                        <li><a href="">Cookies Policy</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Dispute resolution</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="col_d">
+                    <ul>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">About us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" id="col_e">
+                    <h4><a href="">Install App</a></h4>
+                    <ul>
+                        <li><a href="#"><img src="./Images/Group.png"></a></li>
+                        <li><a href="#"><img src="./Images/Layer 2.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="footer-col2">
+                    <div id="words">
+                     <p>&#169; 2022 Swiftfoods.ng <span>All rights reserved</span></p>
+                   </div>
+                    <div id="logos">
+                     <a href="#"><img src="./Images/Social Icons.png" class="fa-brands fa-instagram"></a>
+                     <a href="#"><img src="./Images/Social Icons (1).png" class="fa-brands fa-twitter"></a>
+                     <a href="#"><img src="./Images/Social Icons (2).png" class="fa-brands fa-youtube"></a>
+                  </div>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>

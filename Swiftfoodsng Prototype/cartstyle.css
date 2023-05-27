@@ -1,0 +1,502 @@
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logo{
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 87px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    box-shadow:  10px 5px 15px gray;
+}
+
+#cart_item_count{
+    color:#FF724C;
+    font-size: 16px;
+    margin-left: 2px;
+    margin-bottom:-6px;
+    font-weight: 400;
+}
+
+#navbar::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+#navbar img{
+    margin-top: 20px;
+    margin-bottom: 16px;
+    margin-left: 33px;
+    margin-right: 13px;
+    display:block;
+    float: left;
+}
+
+
+#header {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 65%;
+    display: block;
+}
+
+#header ul {
+list-style: none;
+font-size: large;
+margin-left: 20%;
+margin-top: 33px;
+margin-bottom: 32px;
+margin-right: 0;
+width: 100%;
+display: block;
+}
+
+#header li{
+    display: inline-block;
+    margin-left: 150px;
+    padding: 0;
+    margin-right: 0;
+}
+
+#header li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#header li a::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+  #header li a:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+
+#Navbar{
+    position: fixed;
+    margin-top: 0;
+    
+}
+
+
+
+#main_section{
+    padding-top: 100px;
+    display:block;
+    background-color:#F4F4F8;
+    width: 100%;
+}
+#head{
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+#head h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mini_box{
+display: flex;
+margin-top: -30px;
+margin-left: 12px;
+padding-top: 52px;
+padding-left: 12px;
+margin-right: 12px;
+background-color: white;
+}
+#emptyCart{
+    margin-left: 15px;
+    color: red;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    width: 130px;
+    height: 40px;
+    border: 2px solid red;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#emptyCart:hover{
+    background-color: red;
+    color: white;
+}
+
+.order_box{
+    margin-left: 2%;
+    width: 850px;
+    overflow: scroll;
+    overflow-x: scroll;
+}
+
+.orders{
+    display: flex;
+    margin-bottom: 15px;
+    border: 2px solid #F4F4F8;
+    background-color: white;
+    width: 750px;
+    height: 176px;
+}
+.orders h1{
+    font-size: 24px;
+    justify-content: space-between;
+}
+.orders h2{
+    font-size: 12px;
+    font-weight: 300;
+}
+.photo_box{
+    margin-right: 20px;
+}
+.info_box{
+    margin-top: 30px;
+    line-height: .5em;
+}
+.food_name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 50px;
+    width: 270px;
+    display: inline-block;
+}
+
+.food_photo img{
+    width: 176px;
+    height: 176px;
+}
+.unit_control{
+    border: 1px solid #F4F4F8;   
+    width: 80px;
+    height: 30px;
+    margin-top: 67px;
+    margin-left: 94px;
+    padding-top: 8px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+.unit{
+     text-align: center;
+     height: 20px;
+     margin-bottom: 8px;
+}
+
+
+.delete{
+    width: 94px;
+    height: 27px;
+    margin-top: 125px;
+    margin-left: -200px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid rgb(238, 232, 232);
+}
+.delete:hover{
+    cursor: pointer;
+}
+#continue{
+    margin-top: -20px;
+}
+.delete img{
+margin-right: 6px;
+}
+
+#transaction_section{
+    margin-left: 15%;
+    width: 600px;
+    height: 500px;
+    box-shadow:  -5px 5px  10px gray, 3px -3px 7px gray;
+
+}
+
+#transaction_report{
+    width: 520px;
+    height: 130px;
+    background-color: #F4F4F8 ;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+
+}
+
+#transaction_report h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+#subtotal{
+    margin-left: 370px;
+}
+#delivery_price{
+    margin-left: 350px;
+}
+#total_price{
+    margin-left: 370px;
+}
+#transaction_report h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#mini_text{
+    text-align: right;
+    font-size: 10px;
+}
+
+#payment_option{
+    width: 520px;
+    height: 130px;
+    background-color: #F4F4F8 ;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    padding-top: 30px;
+    padding-bottom: 3px;
+    line-height: 3em;
+    font-weight: 600;
+}
+.card{
+    margin-bottom: -8px;
+}
+#continue{
+    background-color: white;
+    border: 0;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#proceed {
+    width: 350px;
+    height: 60px;
+    background-color: #4BA90A;
+    margin-left: 81px;
+    margin-top: 50px;
+    border-radius: 8px;
+    border: 0;
+}
+#proceed a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+#proceed:hover{
+    background-color: #f24822;
+}
+
+#coupon_box{
+    margin-top: 60px;
+    padding-left: 20px;
+    width: 1440px;
+    height: 800px;
+    background-image: url(./Images/image_15-removebg-preview\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#coupon_field{
+    width: 552px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid #4BA90A;
+    margin-right: 0;
+}
+#apply{
+    border-radius: 10px;
+    border: 0;
+    width: 155px;
+    height: 64px;
+    background-color: #4BA90A;
+    color: white;
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    margin-left: 1px;
+    
+}
+#apply:hover{
+    background-color: #f24822;
+}
+
+.footer {
+    height: 307px;
+    margin-top: -127px;
+    background-color: #A6A6A6;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    padding: 10px 0;
+    clear: both;
+}
+
+
+.footer-container {
+    /*max-width: 1170px;*/
+    width: 1440px;
+    height: 307px;
+   /** background-color: aqua;**/
+   background-color: #A6A6A6;
+    
+    
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+#footer_colI  {
+    width: 15%;
+    margin-top: 108px ;
+    margin-left: 105px;
+    margin-right: 156px;
+    text-align: left;
+}
+#footer_colI h1 a{
+    margin-right: 156px;
+    padding: 0;
+}
+
+.footer-col {
+    display: block;
+    position: relative;
+    line-height: 2em;
+    
+    
+}
+#col_a{
+    width: 70px;
+    height: 157px;
+    margin-right: 87px;
+    padding: 0;
+}
+#col_b{
+    line-height: 3.5em;
+    width: 84px;
+    height:157px;
+    font-size: 10px;
+    padding: 0;
+    margin-right: 82px;
+}
+#col_c{
+    margin-right: 60px;
+}
+#col_d{
+    margin-right: 194px;
+}
+#col_d ul li a{
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: left;
+}
+#col_e{
+    margin-left: 0;
+}
+
+
+.footer-col h4 {
+    margin-bottom: -13px;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: left;
+}
+
+.footer-col h1 a {
+
+    text-decoration: none;
+    color: #1E1E1E;
+    text-align: left;
+}
+
+.footer-col h4 a {
+    text-decoration: none;
+    color: #1E1E1E;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
+}
+
+.footer-col ul li a {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #1E1E1E;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    padding: 0;
+    margin-left: -37px;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 4px;
+}
+
+.footer-col2 {
+    width: 1080px;
+    align-items: flex-start;
+    padding-top: 15px;
+    color: #1E1E1E;
+    display: flex;
+    margin-left: 160px;
+}
+
+.footer-col2 p {
+    font-size: 14px;
+    
+}
+#words{
+    width: 50%;
+}
+
+#logos{
+    width: 50%;
+    text-align: right;
+}
+
+.footer-col2 a {
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #797676;
+    margin-right: 0 20px 10px 0;
+    text-align: center;
+    line-height: 30px;
+    transition: all 0.5s ease;
+}
+.footer-col2 a:hover {
+    color: #ffffff;
+    background-color: #1E1E1E;
+}

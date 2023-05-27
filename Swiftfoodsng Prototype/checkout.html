@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      
+
+         <!---- font awesome cdn link  -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Swiftfoods</title>
+        
+    </head>
+
+    <body>
+
+        <!-------------------     NAVBAR   ------------------>
+        <div id="navbar">
+            <img id="logo" src="./Images/Logo.png">
+        <nav id="header"> 
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="cart.html">Cart<sup><span id="cart_item_count" ></span></sup></a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="mamaputin.html">Menu</a></li>
+          </ul>
+        </nav>
+    </div>
+        
+
+
+        <!-------------------     CHECKOUT PAGE  ------------------>
+
+
+        
+         <!----------- LET THIS BE THE DIV FOR THE LAST SECTION OF THIS PAGE-->
+         <div id="container">
+            <div id="main">
+               <div class="checkout">
+                   <div class="checkout-row">
+                       <div class="checkout-col">
+                           <h2>Checkout</h2>
+                           <div class="payment-details">
+                               <img src="images/Card design.png" alt="card-design">
+                               <h3>Payment details</h3>
+                               <form>
+                                <label for="cardnum">Card Number</label><br>
+                                <input type="number" id="cardnum" name="cardnum"><br>
+                                <span>
+                                    <label for="expirydate">Expiry Date</label><br>
+                                    <input type="number"  class="exp" id="expirydate" name="expirydate"><br>
+                                    <label for="cvv">CVV</label><br>
+                                    <input type="text" class="exp" id="cvv" name="cvv"><br>
+                                </span>
+                                <label for="cardname">Name on Card</label><br>
+                                <input type="text" id="cardname" name="cardname">
+                               </form>
+                               <form>
+                                
+                                <input type="checkbox" id="secure" name="secure" value="secure">
+                                <label for="secure">Securely save card and details</label>
+                                </form>
+
+                            </div>
+                            <div class="delivery-details">
+                                <h2>Delivery details</h2>
+                               <div class="delivery-container">
+                                <form>
+                                    <label for="name">Name</label><br>
+                                    <input type="text" id="name" name="name"><br>
+                                    <label for="phonenum">Phone number</label><br>
+                                    <input type="number" id="phonenum" name="phonenum"><br>
+                                    <label for="delivery">Delivery address</label><br>
+                                    <input type="text" id="delivery" name="delivery">
+                                   </form>
+                               </div>
+                                   <p>Locate me </p>
+                                   <p class="save">Save</p>
+
+                            </div>
+
+                        </div>
+                       <!-- <div class="checkout-col">
+                        <div class="checkout-col2">
+                            <div class="checkout-total">
+                                <p>Subtotal</p>
+                                <p >Delivery fee<span>&#8358;1,485</span></p>
+                                <p class="total-chec">Total<span class="total-amount">&#8358;20,500</span></p>
+                                <p class="information">Additional fees and taxes may apply</p>
+                            </div>
+                            <h3 class="payment-methods">Payment method</h3>
+                            <div class="checkout-total">
+                                <form>
+                                    <input type="radio" id="card-chec" name="card" value="card">
+                                    <label for="card">Credit/Debit card<img src="images/Mastercard Logo.png"><img src="images/Visa.png"></label><br>
+                                    <input type="radio" id="cash-chec" name="cash" value="cash">
+                                    <label for="cash">Cash on delivery</label>
+                                  </form>
+                            </div>
+                            <a  href="#" class="checkout-proceed">Proceed</a>
+                        </div>
+                            -->
+                            <div id="transaction_section">
+                                <div id="transaction_report">
+                                    <h2>Subtotal <span id="subtotal">&#8358;0</span> </h2>
+                                    <p>Delivery Fee <span id="delivery_price"> &#8358;0</span> </p>
+                                    <h1> Total <span id="total_price">&#8358;0</span></h1>
+                                     <p id="mini_text">Additional fees and taxes may apply</p>
+                                </div>
+                                <div id="payment">
+                                    <h3>Payment Method</h3>
+                                    <div id="payment_option">
+                                        <input type="radio" name="payment_option" id="card" class="options"><label for="card">Credit/Debit card <img src="./Images/Mastercard Logo.png" alt="Mastercard" class="card"><img src="./Images/Visa.png" alt="Visa" class="card"></label><br>
+                                        <input type="radio" name="payment_option" id="cash" class="options"><label for="cash">Cash on delivery </label>
+                                    </div>
+                                </div>
+                                <button id="proceed" type="submit"><a href="">Proceed to Checkout</a></button>
+                            </div>
+                       </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+
+
+
+       <!-------------------     FOOTER   ------------------>
+
+       <footer class="footer">
+           <div class="footer-container">
+               <div class="footer-row">
+                   <div class="footer-col">
+                    <span><img src="images/swiftfood-logo.png" alt="logo"></span>
+                   </div>
+                   <div class="footer-col ">
+                       <h4><a href="">Home</a></h4>
+                       <ul>
+                           <li><a href="">Menu</a></li>
+                           <li><a href="">Order</a></li>
+                           <li><a href="">Delivery</a></li>
+                           <li><a href="">Bookings</a></li>
+                           <li><a href="">Settings</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer-col">
+                       <h4><a href="">Support</a></h4>
+                       <ul>
+                           <li><a href="">Help Center</a></li>
+                           <li><a href="">Safety Center</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer-col">
+                       <h4><a href="">Legal</a></h4>
+                       <ul>
+                           <li><a href="">Cookies Policy</a></li>
+                           <li><a href="">Privacy Policy</a></li>
+                           <li><a href="">Terms of Service</a></li>
+                           <li><a href="">Dispute resolution</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer-col">
+                       <ul>
+                           <li><a href="">Contact us</a></li>
+                           <li><a href="">About us</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer-col">
+                       <h4><a href="">Install App</a></h4>
+                       <ul>
+                            <li><img src="images/goggle-play-img.png"></li>
+                            <li><img src="images/app-store-img.png"></li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="footer-row">
+                   <div class="footer-col2">
+                       <p>&#169; 2022 Swiftfoods.ng <span>All rights reserved</span></p>
+                   </div>
+                   <div class="footer-col2">
+                       <a href="#"><i class="fa fa-instagram"></i></a>
+                       <a href="#"><i class="fa fa-twitter"></i></a>
+                       <a href="#"><i class="fa fa-youtube-square"></i></a>
+                   </div>
+               </div>
+           </div>
+       </footer>
+
+
+
+
+
+
+        
+
+
+        <script src="script.js" ></script>
+    </body>
+</html>

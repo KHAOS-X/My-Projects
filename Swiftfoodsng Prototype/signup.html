@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js"></script> 
+    <title>Sign Up</title>
+</head>
+<body>
+    <div id="Navbar">
+        <div id="navbar">
+            <img src="./Images/Logo.png" alt='logo'>
+            <nav id="header"> 
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+              </ul>
+            </nav>
+            <a href="login.html"><input id="login" type="button" name="Log in" value="Login"></a>
+        </div>
+    </div>
+    <div id="main_container">
+        <div id="image_hub">
+            <img src="./Images/bon-vivant-qom5MPOER-I-unsplash 5.png" alt='img'>
+        </div>
+        <div id="form_container">
+            <div id="header_container"> 
+                <h1>Sign Up</h1>
+           </div>
+            <div id="content_container">
+                <form name="myform2"  method="post"  action="https://swiftfoodapi.herokuapp.com/API/v1/customers/register" >
+                    <label name="first_name">First name<br> <input class="textarea" type="text" name="first_name"></label><br>
+                    <label name="last_name">Last name <br><input class="textarea" type="text" name="last_name"></label><br>
+                    <label name="phone">Phone Number<br><input class="textarea" type="tel" name="phone"></label><br>
+                    <label name="email">Email address<br> <input class="textarea" type="email" name="email"></label><br>
+                    <label name="password">Password <br><input class="textarea" type="password" name="password"></label><br>
+                    <label name="confirm_password">Confirm Password <br><input class="textarea" type="password" name="confirm_password"></label><br>
+                    <div id="t_c"><label name="t_c"><input id="T_C" type="checkbox" name="t_c"> Yes, I have read and accepted all SwiftFoods <a href="" id="terms">Terms and Conditions</a>.</label></div><br>
+                    <a href="homepage.html"><input onclick="return validateForm2()" class="textarea button" type="submit" name="sign_up" value="Sign up" ></a>          
+                  </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

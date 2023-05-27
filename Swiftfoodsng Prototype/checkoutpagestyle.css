@@ -1,0 +1,160 @@
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+}
+#mother_container label{
+    font-weight: 500;
+    width: 100%;
+    font-size: 22px;
+}
+#checkout_section{
+    display: flex;
+    background-color: #d4d4d439;
+    width: 100%;
+}
+#payment-detail-box{
+    padding-right: 100px;
+    border: 2px solid #D4D4D4;
+    padding-left: 15px;
+    padding-top: 25px;
+    width: 50%;
+}
+#payment-form input{
+    border: 1px solid #4BA90A;
+    height: 40px;
+    width: 700px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#mid-form{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+#mid-form .mid{
+    width: 120px;
+}
+#payment-method-box{
+    background-color: white;
+    margin: 0;
+    width: 50%;
+    border: 2px solid #D4D4D4;
+}
+#payment-method-box #proceed{
+    width: 60%;
+    height: 40px;
+    background-color: #4BA90A;
+    margin-left: 20%;
+    margin-top: 50px;
+    border: 0;
+    border-radius: 5px;
+
+}
+#payment-method-box #proceed:hover{
+    background-color: #ff6000;
+}
+#payment-method-box #proceed a{
+    width: 80%;
+    text-decoration: none;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: 500;
+}
+#transaction_report{
+    background-color: #d4d4d439;
+    width: 99%;
+    padding-left: 10px;
+
+}
+#transaction_report #subtotal{
+    float: right;
+    padding-right: 40px;
+
+}
+#transaction_report #delivery_price{
+    float: right;
+    padding-right: 40px;
+
+}
+#transaction_report #total_price{
+    float: right;
+    padding-right: 40px;
+
+}
+#transaction_report #mini_text{
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+#payment h3{
+    padding-left: 10px;
+
+}
+
+#payment_option{
+    background-color: #d4d4d439;
+    width: 99%;
+    padding-left: 10px;
+    display: inline-block;
+    line-height: 3.0em;
+}
+#payment_option label .card{
+    padding-top: 25px;
+    margin-bottom: -9px;
+}
+#payment_option label {
+    margin-right: 40px;
+}
+#customer-location-box{
+    display: flex;
+    background-color: #d4d4d439;
+    width: 100%;
+    border: 2px solid #D4D4D4;
+
+}      
+#form-box{
+    width: 50%;
+    padding-right: 200px;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+#form-box form{
+    width: 100%;
+}
+#form-box input{
+    border: 1px solid #4BA90A;
+    height: 40px;
+    width: 700px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#form-box form #locate-button{
+    border: 0;
+    font-size: 16px;
+} 
+#form-box form #locate-button img{ 
+    width: 15px;
+    margin-bottom: -2px;
+} 
+#form-box form #save-button{
+    border: 0;
+    background-color: #4BA90A;
+    color: whitesmoke;
+    height: 40px;
+    width: 20%;
+    margin-left: 25%;
+    border-radius: 5px;
+    font-size: 24px;
+} 
+
+#image-box{
+    padding-top: 50px;
+}

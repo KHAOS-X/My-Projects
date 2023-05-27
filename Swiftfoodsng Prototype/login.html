@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Log in</title>
+</head>
+<body>
+    <div id="header">
+        <div id="navbar">
+            <img src="./Images/Logo.png">
+            <nav id="header"> 
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+              </ul>
+            </nav>
+            
+        </div>
+    </div>
+    <div id="main_container">
+        <div id="image_booth"><img src="./Images/IMage.png"></div>
+        <div id="form_container">
+            <div id="header_container">
+                <h1>Login</h1>
+            </div>
+            <div id="content_container">
+                <form name="myform" id="myform" method="post" action="https://swiftfoodapi.herokuapp.com/API/v1/auth/customers/login" >
+                    <label name="email"> Enter your email address<br>
+                    <input class="textarea" type="text" name="email">
+                    </label>
+                    <br>
+                    <label name="email"> Password<br>
+                    <input class="textarea" type="password" name="password">
+                    </label>
+                    <br>
+                    <label id="textline" name="email"> Remember me
+                    <input id="checkmark" type="checkbox" name="check">
+                    </label>
+                    <br>
+                    <a href="homepage.html"><input onclick="return validateForm()" class="textarea button"  type="submit" name="Login" value="Login"></a>
+                </form>
+            </div>
+            <div id="first_footer">
+                <p>Sign in with</p>
+                <img src="./Images/icons8-google-24.png"> &nbsp;
+               <img src="./Images/icons8-facebook-24.png">
+            </div>
+            <div id="footer">
+                <p>Don't have an account?<a href="signup.html"> Sign up</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

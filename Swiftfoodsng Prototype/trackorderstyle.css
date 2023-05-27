@@ -1,0 +1,70 @@
+body{
+    padding: 0;
+}
+#mother-container{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+#section-1{
+    width: 100%;
+}
+#section-1 img{
+    text-align: center;
+    padding-left: 35%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#section-1 p{
+    width: 100%;
+    font-size: 24px;
+}
+#section-1 button{
+    display: inline;
+    height: 50px;
+    width: 450px;
+    flex: none;
+    font-size: 24px;
+    text-align: left;
+    border: 0;
+    background-color: inherit;
+    float: right;
+}
+#section-1 button img{
+    padding-left: -20px;
+    margin-top: -78px;
+    margin-left: 180px;
+}
+#section-2{
+    width: 100%;
+    display: flex;
+
+}
+#progress-bar{
+    width: 50%;
+}
+#section-2 ul{
+    padding-left: 12%;
+}
+#section-2 ul li{
+    font-size: 24px;
+    line-height: 5em;
+    /* list-style-image: url('/Images/Success.png') ; */
+    list-style-type: none;
+    list-style-position: outside ;
+    margin-top: -20px;
+}
+#timer{
+    text-align: center;
+    width: 50%;
+    height: '';
+    padding-top:300px ;
+    background-color: #D4D4D439;
+    font-size: 40px;
+}

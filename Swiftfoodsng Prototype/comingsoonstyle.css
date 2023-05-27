@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding:0;
+    height: fit-content;
+}
+
+#logo{
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    display: block;
+    width: 1500px;
+    height: 87px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    box-shadow:  10px 5px 15px gray;
+}
+
+#navbar::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+#navbar img{
+    margin-top: 20px;
+    margin-bottom: 16px;
+    margin-left: 33px;
+    margin-right: 13px;
+    display:block;
+    float: left;
+}
+
+
+#header {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#header ul {
+list-style: none;
+font-size: large;
+margin-top: 33px;
+margin-bottom: 32px;
+margin-right: 0;
+}
+
+#header li{
+    display: inline-block;
+    margin-left: 100px;
+    padding: 0;
+    margin-right: 0;
+}
+
+#header li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#header li a::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+  #header li a:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+#login {
+    position: absolute;
+    float: left;
+    margin-right: 53px;
+    margin-top: 25px;
+    margin-bottom: 18px;
+    margin-left: 553.98px;
+    height: 44px;
+    width: 154px;
+    border: 2px solid #4BA90A;
+    border-radius: 5px;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Navbar{
+    position: fixed;
+    margin-top: 0;
+    
+}
+#main_section{
+    display: flex;
+    padding-top: 90px;
+}
+#left{
+    width: 300px;
+    height: 900px;
+}
+#right{
+    background-image: url(./Images/unsplash_bBzjWthTqb8.png);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 960px;
+    display: flex;
+
+}
+
+#L{
+    text-align: right;
+    font-size: 60px;
+    padding-top: 300px;
+    width: 600px;
+    height: 960px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding-right: 20px;
+    color: white;
+    
+}
+
+#R{
+    font-size: 120px;
+    padding-top: 0px;
+    padding-left: 0;
+    width: 600px;
+    height: 960px;
+    padding-top: 450px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+ 
+
+}
+
+
