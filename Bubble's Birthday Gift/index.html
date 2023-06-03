@@ -9,7 +9,16 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="container">
+	<script type="text/javascript">
+		document.addEventListener('mousemove', function(e){
+	const wrap = document.querySelector('.coupon');
+	const erase = document.createElement('span');
+	erase.style.left = e.offsetX+ 'px';
+	erase.style.top = e.offsetY+ 'px';
+	wrap.appendChild(erase);
+});
+	</script>
+	 <div class="container">
 		<div class="card">
 			<div class="outside">
 				<h1 class="heading">
@@ -37,10 +46,12 @@
 				<img src="/Images/make-a-wish.png">
 				<p>May all your birthday wishes and dreams come true <i class=" fa fa-solid fa-heart fa-sm" style="color: #ed0202;"></i></p>
 			</div>
-			<div class="wish_coupon">
-				<img class="wishes" src="/Images/make-a-wish.png" alt="make a wish">
-			</div>
+			
 		</div>
-	</div>
+		<div class="coupon">
+			
+		</div>
+
+	</div> 
 </body>
 </html>

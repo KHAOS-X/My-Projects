@@ -8,7 +8,7 @@
 
 body{
 	height: 200vh;
-	background: linear-gradient(to top right, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.5)), url(/Images/background.gif);
+	background: linear-gradient(to top right, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.5)), url(/Images/source.gif);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -21,10 +21,10 @@ body{
 	width: 100%;
 }
 .happy_birthday{
-width: 200px;
-height: 220px;
-text-align: center;
-margin: auto;
+	width: 200px;
+	height: 220px;
+	text-align: center;
+	margin: auto;
 
 }
 
@@ -62,7 +62,7 @@ margin: auto;
 	border-radius: 20px;
 	text-align: center;
 	padding: 12px; 
- backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 .outside{
 	background-color: blanchedalmond;
@@ -130,15 +130,28 @@ margin: auto;
 	background-color: lightgrey;
 }
 
-.wish_coupon{
+.coupon{
+	width: 250px;
+	height: 250px;
+	background: url(/Images/cover.png);
+	background-size: contain;
 	position: absolute;
-	top: 300px;
-	left: 19%;
+	left: 25%;
+	top: 80%;
 }
-.wishes{
-	
-	width: 200px;
-	height: 200px;
+
+span{
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: url(/Images/coupon.png);
+	background-size: 250px 250px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	pointer-events: none;
+	border-radius: 50%;
+/*	border: 1px solid black;*/
 }
 
 @media screen and (min-width: 600px){
@@ -158,129 +171,147 @@ margin: auto;
 }
 
 @media screen and ( min-width: 1200px){
-		body{
-	height: 150vh;
-	background: linear-gradient(to top right, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.5)), url(/Images/background.gif);
-	background-position: center;
+	body{
+		height: 150vh;
+		background: linear-gradient(to top right, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.5)), url(/Images/background.gif);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	} 
+	.container{
+		perspective: 1000px;
+		width: 100%;
+	}
+	.happy_birthday{
+		width: 230px;
+		height: 250px;
+		text-align: center;
+		margin: auto;
+
+	}
+
+	.heading{
+		font-family: 'Tangerine', cursive;
+		font-size: 36px;
+		font-weight: bold;
+		color: salmon;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.card{
+		width: 280px;
+		height: 390px;
+		position: absolute;
+		top: 100px;
+		left: 230px;
+		transition: 2s;
+		transform-style: preserve-3d;
+	}
+	.card:hover{
+		transform: rotateY(180deg);
+	}
+	.block{
+		position: absolute;
+		left: 650px;
+		top: 200px;
+		perspective: 800px;
+	}
+
+	.outside,.inside{
+		width: 100%;
+		height: 100%;
+		border-radius: 20px;
+		text-align: center;
+		padding: 12px; 
+		backface-visibility: hidden;
+	}
+	.outside{
+		background-color: blanchedalmond;
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+		position: absolute;
+		font-family: 'Bodoni Moda', serif;
+	}
+
+	.outside h3{
+		font-size: 14px;
+		font-style: italic;
+		font-family: 'Yeseva One', cursive;
+	}
+
+
+	.inside{
+		background-color: rgb(255, 244, 79);
+		box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+		transform: rotateY(180deg);
+	}
+
+	.inside h3{
+		font-size: 24px;
+		font-family: 'Alex Brush', cursive;
+	}
+
+	.frames{
+		width: 450px;
+		height: 150px;
+		box-shadow: 0px 5px 10px rgba(225, 225, 225, 0.5);
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 0 20px;
+
+		transform: rotateY(-220deg) rotateX(20deg);
+		position: absolute;
+	}
+
+	.frames p{
+		font-family: 'Tangerine', cursive;
+		font-weight: bold;
+		transform: rotateY(180deg);
+		font-size: 30px;
+	}
+	.frames img{
+		width: 125px;
+		height: 125px;
+		border-radius: 50%;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+	}
+	.frames:nth-child(1){
+		top: -110px;
+		z-index: -1;
+		background-color: coral;
+	}
+	.frames:nth-child(2){
+		background-color: goldenrod;
+	}
+	.frames:nth-child(3){
+		top: 100px;
+		background-color: lightgrey;
+	}
+	.coupon{
+	width: 300px;
+	height: 300px;
+	background: url(/Images/cover.png);
+	background-size: contain;
+	position: absolute;
+	left: 35%;
+	top: 60%;
+}
+
+span{
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: url(/Images/coupon.png);
+	background-size: 300px 300px;
+	background-position: 44% 63%;
 	background-repeat: no-repeat;
-	background-size: cover;
-} 
-.container{
-	perspective: 1000px;
-	width: 100%;
-}
-.happy_birthday{
-width: 230px;
-height: 250px;
-text-align: center;
-margin: auto;
-
-}
-
-.heading{
-	font-family: 'Tangerine', cursive;
-	font-size: 36px;
-	font-weight: bold;
-	color: salmon;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.card{
-	width: 280px;
-	height: 390px;
-	position: absolute;
-	top: 100px;
-	left: 230px;
-	transition: 2s;
-	transform-style: preserve-3d;
-}
-.card:hover{
-	transform: rotateY(180deg);
-}
-.block{
-	position: absolute;
-	left: 600px;
-	top: 200px;
-	perspective: 800px;
-}
-
-.outside,.inside{
-	width: 100%;
-	height: 100%;
-	border-radius: 20px;
-	text-align: center;
-	padding: 12px; 
- backface-visibility: hidden;
-}
-.outside{
-	background-color: blanchedalmond;
-	box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
-	position: absolute;
-	font-family: 'Bodoni Moda', serif;
-}
-
-.outside h3{
-	font-size: 14px;
-	font-style: italic;
-	font-family: 'Yeseva One', cursive;
-}
-
-
-.inside{
-	background-color: rgb(255, 244, 79);
-	box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
-	transform: rotateY(180deg);
-}
-
-.inside h3{
-	font-size: 24px;
-	font-family: 'Alex Brush', cursive;
-}
-
-.frames{
-	width: 450px;
-	height: 150px;
-	box-shadow: 0px 5px 10px rgba(225, 225, 225, 0.5);
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	padding: 0 20px;
-
-	transform: rotateY(-220deg) rotateX(20deg);
-	position: absolute;
-}
-
-.frames p{
-	font-family: 'Tangerine', cursive;
-	font-weight: bold;
-	transform: rotateY(180deg);
-	font-size: 30px;
-}
-.frames img{
-	width: 125px;
-	height: 125px;
+	background-attachment: fixed;
+	pointer-events: none;
 	border-radius: 50%;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-}
-.frames:nth-child(1){
-	top: -110px;
-	z-index: -1;
-	background-color: coral;
-}
-.frames:nth-child(2){
-	background-color: goldenrod;
-}
-.frames:nth-child(3){
-	top: 100px;
-	background-color: lightgrey;
-}
-.wish_coupon{
-	position: absolute;
-	top: 500px;
-	left: 30%;
-/*	border: 2px solid red;*/
-}
-
+/*	border: 1px solid black;*/
 }
 	
+}
+
