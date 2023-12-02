@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="jquery.js"></script>
+    <title>Internship Information Upload</title>
+</head>
+<body>
+    <div class="body_container">
+        <a href="adminlogin.php"><button class="invisble">INVISIBLE LINK</button></a>
+        <h3>Internship Placement Management System</h3>
+        <div class="mother_container">
+            <form method="POST" class="info_form" id="placement_form">
+                <p>Student Information</p>
+                <br>
+                <label for="full_name">Full Name</label><br>
+                <input type="text" name="full_name" id="full_name" class="input">
+                <br>
+                <label for="faculty">Faculty</label><br>
+                <input type="text" name="faculty" id="faculty" class="input">
+                <br>
+                <label for="department">Department</label><br>
+                <input type="text" name="department" id="department" class="input">
+                <br>
+                <label for="matric_no">Matric Number</label><br>
+                <input type="text" name="matric_no" id="matric_no" class="input">
+                <br>
+                <label for="level">Level</label><br>
+                <select name="level" id="level">
+                    <option value="300">300</option>
+                    <option value="400">400</option>
+                </select>
+                <br>
+                <p>Internship Placement Information</p>
+                <label for="it_type">Internship Type</label><br>
+                <select name="it_type" id="it_type" class="select">
+                    <option value="Summer">Summer</option>
+                    <option value="Semester Long">Semester Long</option>
+                    <option value="Long Term">Long Term</option>
+                </select>
+                <br>
+                <label for="it_duration">Internship Duration (in months)</label><br>
+                <input type="number"  name="it_duration" id="it_duration" class="input">
+                <br>
+                <label for="start_date">Start</label>
+                <input type="date" name="start_date" id="start_date" class="input">
+                <br>
+                <label for="end_date">End</label>
+                <input type="date" name="end_date" id="end_date" class="input">
+                <br>
+                <label for="state_of_placement">State of Placement</label><br>
+                <input type="text" name="state_of_placement" id="state_of_placement" class="input">
+                <br>
+                <label for="company_name">Company Or Organization Name</label><br>
+                <input type="text" name="company_name" id="company_name" class="input">
+                <br>
+                <label for="company_address">Company or Organization Address</label><br>
+                <input type="text" name="company_address" id="company_address" class="input">
+                <br>
+                <label for="company_type">Type of Company or Organization</label><br>
+                <input type="text" name="company_type" id="company_type" class="input">
+                <br>
+                <label for="supervisor_name"></label>Supervisor Name<br>
+                <input type="text" name="supervisor_name" id="supervisor_name" class="input">
+                <br>
+                <label for="supervisor_contact"></label>Supervisor Contact<br>
+                <input type="text" name="supervisor_contact" id="supervisor_contact" class="input">
+                <br>
+                
+                <button type="submit" onclick="submitVrf()" class="button">Submit</button>
+
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function submitVrf(){
+            var fullName  = $("#full_name").val().trim();
+            var faculty  = $("#faculty").val().trim();
+            var department = $("#department").val().trim();
+            var matricNo  = $("#matric_no").val().trim();
+            var level  = $("#level").val().trim();
+            var itType  = $("#it_type").val().trim();
+            var itDuration  = $("#it_duration").val().trim();
+            var startDate  = $("#start_date").val().trim();
+            var endDate  = $("#end_date").val().trim();
+            var placementState = $("#state_of_placement").val().trim();
+            var companyName = $("#company_name").val().trim();
+            var companyAddress = $("#company_address").val().trim();
+            var companyType = $("#company_type").val().trim();
+            var supervisorName = $("#supervisor_name").val().trim();
+            var supervisorContact = $("#supervisor_contact").val().trim();
+
+           if (fullName=='' || faculty=='' || department=='' || matricNo=='' || level=='' || itType=='' ||
+         itDuration=='' || startDate=='' || endDate=='' ||placementState=='' || companyName=='' || 
+          companyAddress=='' || companyType=='' || supervisorName =='' || supervisorContact=='' ){
+				alert("One or more fields are empty")
+			}else{
+                var frmpstn = $("#placement_form").serialize();
+				$.post("placementform.php",frmpstn).done(function(feedback){
+					if (feedback==1){
+						alert("Record Successfully Inserted");
+						reset();	
+					}else{
+						alert(feedback);
+					}
+				});
+            }
+            
+            function reset(){
+			$("#full_name").val('');
+			$("#faculty").val('');
+            $("#department").val('');
+            $("#matric_no").val('');
+            $("#level").val('');
+            $("#it_type").val('');
+            $("#it_duration").val('');
+			$("#start_date").val('');
+			$("#end_date").val('');
+            $("#state_of_placement").val('');
+			$("#company_name").val('');
+			$("#company_address").val('');
+            $("#company_type").val('');
+			$("#supervisor_name").val('');
+			$("#supervisor_contact").val('');
+			document.getElementById("full_name").focus;
+		 }
+      }
+  </script>
+</body>
+</html>
