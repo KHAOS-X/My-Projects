@@ -1,7 +1,7 @@
 <?php
 
 session_start();
- @include "adminConfig.php";
+ @include "adminconfig.php";
 
  $error = $admin_id = $admin_password = "";
  if($_SERVER["REQUEST_METHOD"] == "POST"){

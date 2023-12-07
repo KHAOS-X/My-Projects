@@ -1,6 +1,11 @@
 <?php
-	$con = mysqli_connect('localhost','root','','itm2023') or die('Database not Connected');
-	$str = "SELECT * FROM placement_information ORDER BY full_name ASC";
+	$database_host = 'db4free.net:3306';
+    $database_username ='khaos_x';
+    $database_password = 'Jaybo$$007';
+    $database_name = 'myonlinedb1';
+    
+    $con = mysqli_connect($database_host, $database_username, $database_password, $database_name);
+    $str = "SELECT * FROM placement_information ORDER BY full_name ASC";
 	$query = mysqli_query($con,$str) or die(mysqli_error($con));
 	$cnt = mysqli_num_rows($query);
 	if ($cnt>0){

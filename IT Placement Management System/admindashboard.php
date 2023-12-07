@@ -1,7 +1,7 @@
 <?php
 ob_clean();
 session_start();
-require_once "adminConfig.php";
+require_once "adminconfig.php";
 
 
 if(!isset($_SESSION["admin_name"] ) ){

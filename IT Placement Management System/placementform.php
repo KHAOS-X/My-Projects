@@ -4,7 +4,7 @@ $database_username ='khaos_x';
 $database_password = 'Jaybo$$007';
 $database_name = 'myonlinedb1';
 
-$con = mysqli_connect($database_host, $database_user, $database_password, $database_name) or die('Database not connected');
+$con = mysqli_connect($database_host, $database_username, $database_password, $database_name) or die('Database not connected');
 
 
 

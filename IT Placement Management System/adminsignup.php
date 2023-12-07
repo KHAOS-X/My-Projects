@@ -1,6 +1,6 @@
 <?php
 
-require_once "adminConfig.php";
+require_once "adminconfig.php";
  
 
 $admin_name= $admin_id = $admin_contact = $password = $confirm_password = "";
